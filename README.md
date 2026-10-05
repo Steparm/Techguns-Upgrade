@@ -2,7 +2,7 @@
 
 An addon for **Techguns Community Edition** on Minecraft 1.12.2. The mod adds an **Upgrade Station** where weapons receive up to two random modifications. The catalog contains **839 upgrades** for **40 weapons** and **1 106 individual executable effects**.
 
-**Current version: 1.0.0**
+**Current version: 1.0.0.0**
 
 ## ✨ Features
 
