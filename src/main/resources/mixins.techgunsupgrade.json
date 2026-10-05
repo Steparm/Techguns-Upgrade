@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.7.11",
+  "package": "com.stepm.techgunsupgrade.mixin",
+  "refmap": "mixins.techgunsupgrade.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "GenericGunStatsMixin",
+    "AbstractBeamProjectileMixin",
+    "GenericGunChargeStatsMixin",
+    "GenericGunMeleeStatsMixin",
+    "FlamethrowerProjectileMixin",
+    "GenericProjectileAiMixin",
+    "GenericProjectileImpactMixin",
+    "MiningDrillMixin",
+    "SonicShotgunProjectileMixin",
+    "TeslaProjectileMixin"
+  ],
+  "client": [
+    "GenericGunTooltipMixin",
+    "MixinRainTexture"
+  ],
+  "server": []
+}

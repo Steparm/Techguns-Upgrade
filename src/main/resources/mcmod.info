@@ -1,0 +1,18 @@
+[
+{
+  "modid": "techgunsupgrade",
+  "name": "Techguns Upgrade",
+  "description": "Upgrade your Techguns weapons with 839 unique upgrades across 7 rarities — from Common to Ultra-Mythic.",
+  "version": "1.0.0",
+  "mcversion": "1.12.2",
+  "url": "https://github.com/<твой_ник>/<репозиторий>",
+  "updateUrl": "",
+  "authorList": ["Steparm_tesst"],
+  "credits": "Techguns by pWn3d / TheSlize. MixinBooter by Rongmario.",
+  "logoFile": "logo.png",
+  "screenshots": [],
+  "parent": "",
+  "useDependencyInformation": "true",
+  "requiredMods": ["techguns", "mixinbooter"]
+}
+]
