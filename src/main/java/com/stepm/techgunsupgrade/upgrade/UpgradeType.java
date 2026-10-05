@@ -1,0 +1,36 @@
+package com.stepm.techgunsupgrade.upgrade;
+
+public enum UpgradeType {
+    DAMAGE,
+    FIRE_RATE,
+    ACCURACY,
+    RANGE,
+    MAGAZINE_SIZE,
+    RELOAD_SPEED,
+    
+    INCENDIARY,
+    EXPLOSIVE,
+    ARMOR_PIERCING,
+    SILENCER,
+    KNOCKBACK,
+    POISON,
+    LIGHTNING,
+    FREEZE,
+    
+    DOUBLE_SHOT,
+    TRIPLE_SHOT,
+    BURST_FIRE,
+    INFINITE_MAGAZINE,
+    UNLIMITED_AMMO,
+    VAMPIRE,
+    HUNTER,
+    CHAIN_LIGHTNING,
+    PIERCING,
+    
+    STACKING_DAMAGE,
+    STACKING_FIRE_RATE,
+    STACKING_ACCURACY,
+    STACKING_CRITICAL,
+    
+    ULTRA_MYTHIC
+}
