@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:lasergun",
+  "upgrades": [
+    {
+      "id": "lr_emitter",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "lr_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "lr_big_battery",
+      "rarity": "COMMON",
+      "description": "+5 charges (total 50)",
+      "effects": [
+        {
+          "id": "lr_big_battery.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+5 charges (total 50)"
+        }
+      ]
+    },
+    {
+      "id": "lr_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "lr_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "lr_quick_charge",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "lr_quick_charge.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "lr_power_beam",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "lr_power_beam.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "lr_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "lr_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "lr_focus_lens",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "lr_focus_lens.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "lr_power_pulse",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "lr_power_pulse.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "lr_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "lr_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "lr_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "lr_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "lr_armor_piercing",
+      "rarity": "RARE",
+      "description": "Ignores 40% of target armor",
+      "effects": [
+        {
+          "id": "lr_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 40% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "lr_double_beam",
+      "rarity": "RARE",
+      "description": "15% chance to fire twice (uses 2 charges)",
+      "effects": [
+        {
+          "id": "lr_double_beam.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RANDOM_EXTRA_PROJECTILES",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 1.0
+          },
+          "sourceFragment": "15% chance to fire twice (uses 2 charges)"
+        }
+      ]
+    },
+    {
+      "id": "lr_piercing",
+      "rarity": "EPIC",
+      "description": "Beam pierces enemies (up to 3 targets)",
+      "effects": [
+        {
+          "id": "lr_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "PIERCING_COUNT",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Beam pierces enemies (up to 3 targets)"
+        }
+      ]
+    },
+    {
+      "id": "lr_shield",
+      "rarity": "EPIC",
+      "description": "+20% movement speed while firing",
+      "effects": [
+        {
+          "id": "lr_shield.1",
+          "trigger": "WHILE_HELD",
+          "action": "FIRING_MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% movement speed while firing"
+        }
+      ]
+    },
+    {
+      "id": "lr_precise_shot",
+      "rarity": "EPIC",
+      "description": "First shot after reload is always critical (x1.5 damage)",
+      "effects": [
+        {
+          "id": "lr_precise_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "FIRST_SHOT_AFTER_RELOAD",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "First shot after reload is always critical (x1.5 damage)"
+        }
+      ]
+    },
+    {
+      "id": "lr_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "lr_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "lr_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +50%, Fire Rate +30%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "lr_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, Accuracy +20%"
+        },
+        {
+          "id": "lr_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7692307692307692,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, Accuracy +20%"
+        },
+        {
+          "id": "lr_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "lr_endless",
+      "rarity": "LEGENDARY",
+      "description": "20% chance not to consume charge",
+      "effects": [
+        {
+          "id": "lr_endless.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "lr_lord_light",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1% laser damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "lr_lord_light.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +1% laser damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "lr_deadly_beam",
+      "rarity": "MYTHIC",
+      "description": "If target is scoped for >2 seconds, next shot deals +200% damage",
+      "effects": [
+        {
+          "id": "lr_deadly_beam.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "SCOPED_DAMAGE_MULTIPLIER",
+          "condition": "SCOPED_FOR_TICKS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 40.0
+          },
+          "sourceFragment": "If target is scoped for >2 seconds, next shot deals +200% damage"
+        }
+      ]
+    },
+    {
+      "id": "lr_doomsday",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +250%, Fire Rate +200%, infinite magazine. Beam pierces all enemies and walls. 10% chance to summon a laser rain — 10 beams from the sky within 15 blocks",
+      "effects": [
+        {
+          "id": "lr_doomsday.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lr_doomsday.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.3333333333333333,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lr_doomsday.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lr_doomsday.4",
+          "trigger": "PASSIVE",
+          "action": "RAILGUN_PIERCE",
+          "condition": "ALWAYS",
+          "value": 160.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Beam pierces all enemies and walls"
+        },
+        {
+          "id": "lr_doomsday.5",
+          "trigger": "BLOCK_IMPACT",
+          "action": "LASER_RAIN",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 15.0
+          },
+          "sourceFragment": "10% chance to summon a laser rain — 10 beams from the sky within 15 blocks"
+        }
+      ]
+    }
+  ]
+}

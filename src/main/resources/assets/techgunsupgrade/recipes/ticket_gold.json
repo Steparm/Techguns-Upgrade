@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "PIP",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "I": {
+      "item": "techgunsupgrade:ticket_iron"
+    }
+  },
+  "result": {
+    "item": "techgunsupgrade:ticket_gold",
+    "count": 1
+  }
+}

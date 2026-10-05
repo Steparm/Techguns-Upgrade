@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:flamethrower",
+  "upgrades": [
+    {
+      "id": "flame_valve",
+      "rarity": "COMMON",
+      "description": "Flame range +15%",
+      "effects": [
+        {
+          "id": "flame_valve.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Flame range +15%"
+        }
+      ]
+    },
+    {
+      "id": "flame_big_tank",
+      "rarity": "COMMON",
+      "description": "+20 fuel (total 120)",
+      "effects": [
+        {
+          "id": "flame_big_tank.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 20.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20 fuel (total 120)"
+        }
+      ]
+    },
+    {
+      "id": "flame_stabilizer",
+      "rarity": "COMMON",
+      "description": "Flame spread -15%",
+      "effects": [
+        {
+          "id": "flame_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Flame spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "flame_silencer",
+      "rarity": "COMMON",
+      "description": "Enemies see fire from shorter distance",
+      "effects": [
+        {
+          "id": "flame_silencer.1",
+          "trigger": "BEFORE_SHOT",
+          "action": "DETECTION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Enemies see fire from shorter distance"
+        }
+      ]
+    },
+    {
+      "id": "flame_incendiary",
+      "rarity": "UNCOMMON",
+      "description": "Burn damage +30%",
+      "effects": [
+        {
+          "id": "flame_incendiary.1",
+          "trigger": "DAMAGE_OVER_TIME",
+          "action": "BURN_DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Burn damage +30%"
+        }
+      ]
+    },
+    {
+      "id": "flame_long_hose",
+      "rarity": "UNCOMMON",
+      "description": "Flame range +30%",
+      "effects": [
+        {
+          "id": "flame_long_hose.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Flame range +30%"
+        }
+      ]
+    },
+    {
+      "id": "flame_high_pressure",
+      "rarity": "UNCOMMON",
+      "description": "Flame spread speed +25%",
+      "effects": [
+        {
+          "id": "flame_high_pressure.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Flame spread speed +25%"
+        }
+      ]
+    },
+    {
+      "id": "flame_thickener",
+      "rarity": "UNCOMMON",
+      "description": "Fire stays on ground 2 seconds longer",
+      "effects": [
+        {
+          "id": "flame_thickener.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "GROUND_FIRE_DURATION_ADD",
+          "condition": "ALWAYS",
+          "value": 40.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire stays on ground 2 seconds longer"
+        }
+      ]
+    },
+    {
+      "id": "flame_napalm",
+      "rarity": "RARE",
+      "description": "Ignites enemies for 5 seconds (instead of 3)",
+      "effects": [
+        {
+          "id": "flame_napalm.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 100.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites enemies for 5 seconds (instead of 3)"
+        }
+      ]
+    },
+    {
+      "id": "flame_explosive",
+      "rarity": "RARE",
+      "description": "10% chance of small explosion on hit",
+      "effects": [
+        {
+          "id": "flame_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "10% chance of small explosion on hit"
+        }
+      ]
+    },
+    {
+      "id": "flame_hell",
+      "rarity": "RARE",
+      "description": "Damage +30%, but fuel consumption +20%",
+      "effects": [
+        {
+          "id": "flame_hell.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%"
+        },
+        {
+          "id": "flame_hell.2",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_CONSUMPTION_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "fuel consumption +20%"
+        }
+      ]
+    },
+    {
+      "id": "flame_smoke",
+      "rarity": "RARE",
+      "description": "Creates a smoke cloud while firing, hiding the player",
+      "effects": [
+        {
+          "id": "flame_smoke.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "SMOKE_SCREEN",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Creates a smoke cloud while firing, hiding the player"
+        }
+      ]
+    },
+    {
+      "id": "flame_tornado",
+      "rarity": "EPIC",
+      "description": "Firing at the ground creates a moving fire zone",
+      "effects": [
+        {
+          "id": "flame_tornado.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "MOVING_FIRE_ZONE",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 2.0
+          },
+          "sourceFragment": "Firing at the ground creates a moving fire zone"
+        }
+      ]
+    },
+    {
+      "id": "flame_pyromaniac",
+      "rarity": "EPIC",
+      "description": "Each killed enemy explodes, igniting nearby enemies",
+      "effects": [
+        {
+          "id": "flame_pyromaniac.1",
+          "trigger": "PASSIVE",
+          "action": "PYROMANIAC_EXPLOSION",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each killed enemy explodes, igniting nearby enemies"
+        }
+      ]
+    },
+    {
+      "id": "flame_hot_steel",
+      "rarity": "EPIC",
+      "description": "Fire ignores 50% of fire resistance",
+      "effects": [
+        {
+          "id": "flame_hot_steel.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_RESISTANCE_BYPASS",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire ignores 50% of fire resistance"
+        }
+      ]
+    },
+    {
+      "id": "flame_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "flame_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "flame_storm",
+      "rarity": "LEGENDARY",
+      "description": "Range +50%, Damage +40%",
+      "effects": [
+        {
+          "id": "flame_storm.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Range +50%"
+        },
+        {
+          "id": "flame_storm.2",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%"
+        }
+      ]
+    },
+    {
+      "id": "flame_endless",
+      "rarity": "LEGENDARY",
+      "description": "Infinite magazine (fuel not consumed)",
+      "effects": [
+        {
+          "id": "flame_endless.1",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Infinite magazine (fuel not consumed)"
+        }
+      ]
+    },
+    {
+      "id": "flame_burning_earth",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% fire damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "flame_burning_earth.1",
+          "trigger": "KILL",
+          "action": "STACK_BURN_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% fire damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "flame_deadly_heat",
+      "rarity": "MYTHIC",
+      "description": "If burning for more than 5 seconds, target takes +200% fire damage",
+      "effects": [
+        {
+          "id": "flame_deadly_heat.1",
+          "trigger": "DAMAGE_OVER_TIME",
+          "action": "BURN_DURATION_DAMAGE",
+          "condition": "TARGET_BURNING_FOR_TICKS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "If burning for more than 5 seconds, target takes +200% fire damage"
+        }
+      ]
+    },
+    {
+      "id": "flame_hellfire",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, range +100%, infinite magazine. Ignites enemies for 10 seconds and leaves burning trails on the ground",
+      "effects": [
+        {
+          "id": "flame_hellfire.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, range +100%, infinite magazine"
+        },
+        {
+          "id": "flame_hellfire.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, range +100%, infinite magazine"
+        },
+        {
+          "id": "flame_hellfire.3",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "range +100%"
+        },
+        {
+          "id": "flame_hellfire.4",
+          "trigger": "PASSIVE",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 200.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites enemies for 10 seconds and leaves burning trails on the ground"
+        },
+        {
+          "id": "flame_hellfire.5",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "FIRE_TRAIL",
+          "condition": "ALWAYS",
+          "value": 200.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 1.0
+          },
+          "sourceFragment": "Ignites enemies for 10 seconds and leaves burning trails on the ground"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "techgunsupgrade:custom/upgrade_table",
+  "textures": {
+    "particle": "techgunsupgrade:blocks/armor_bench_bottom_full",
+    "1": "techgunsupgrade:blocks/armor_bench_bottom_mid",
+    "2": "techgunsupgrade:blocks/armor_bench_upper_bottom",
+    "3": "techgunsupgrade:blocks/armor_bench_bottom_full",
+    "4": "techgunsupgrade:blocks/grinder_side",
+    "5": "techgunsupgrade:blocks/armor_bench_bottom"
+  }
+}

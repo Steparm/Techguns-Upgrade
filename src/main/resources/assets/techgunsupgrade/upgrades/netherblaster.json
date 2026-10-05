@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:netherblaster",
+  "upgrades": [
+    {
+      "id": "hb_emitter",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "hb_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "hb_big_capacitor",
+      "rarity": "COMMON",
+      "description": "+2 charges (total 12)",
+      "effects": [
+        {
+          "id": "hb_big_capacitor.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+2 charges (total 12)"
+        }
+      ]
+    },
+    {
+      "id": "hb_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "hb_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "hb_quick_charge",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "hb_quick_charge.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "hb_magnum_charge",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "hb_magnum_charge.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "hb_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "hb_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "hb_focus_lens",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "hb_focus_lens.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "hb_power_pulse",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "hb_power_pulse.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "hb_hellfire",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "hb_hellfire.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "hb_explosive_charge",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "hb_explosive_charge.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "hb_armor_piercing",
+      "rarity": "RARE",
+      "description": "Ignores 40% of target armor",
+      "effects": [
+        {
+          "id": "hb_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 40% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "hb_double_shot",
+      "rarity": "RARE",
+      "description": "15% chance to fire twice (uses 2 charges)",
+      "effects": [
+        {
+          "id": "hb_double_shot.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RANDOM_EXTRA_PROJECTILES",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 1.0
+          },
+          "sourceFragment": "15% chance to fire twice (uses 2 charges)"
+        }
+      ]
+    },
+    {
+      "id": "hb_hell_pit",
+      "rarity": "EPIC",
+      "description": "If two shots hit the same target consecutively, second deals +150% damage",
+      "effects": [
+        {
+          "id": "hb_hell_pit.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONSECUTIVE_TARGET_DAMAGE_MULTIPLIER",
+          "condition": "CONSECUTIVE_SAME_TARGET",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If two shots hit the same target consecutively, second deals +150% damage"
+        }
+      ]
+    },
+    {
+      "id": "hb_demon_speed",
+      "rarity": "EPIC",
+      "description": "+20% movement speed while firing",
+      "effects": [
+        {
+          "id": "hb_demon_speed.1",
+          "trigger": "WHILE_HELD",
+          "action": "FIRING_MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% movement speed while firing"
+        }
+      ]
+    },
+    {
+      "id": "hb_precise_shot",
+      "rarity": "EPIC",
+      "description": "First shot after reload is always critical (x1.5 damage)",
+      "effects": [
+        {
+          "id": "hb_precise_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "FIRST_SHOT_AFTER_RELOAD",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "First shot after reload is always critical (x1.5 damage)"
+        }
+      ]
+    },
+    {
+      "id": "hb_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "hb_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "hb_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +50%, Fire Rate +40%",
+      "effects": [
+        {
+          "id": "hb_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +40%"
+        },
+        {
+          "id": "hb_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7142857142857143,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +40%"
+        }
+      ]
+    },
+    {
+      "id": "hb_endless_fire",
+      "rarity": "LEGENDARY",
+      "description": "20% chance not to consume charge",
+      "effects": [
+        {
+          "id": "hb_endless_fire.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "hb_lord_of_hell",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% fire damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "hb_lord_of_hell.1",
+          "trigger": "KILL",
+          "action": "STACK_BURN_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% fire damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "hb_deadly_shot",
+      "rarity": "MYTHIC",
+      "description": "Last charge in magazine deals +300% damage",
+      "effects": [
+        {
+          "id": "hb_deadly_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "LAST_ROUND",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Last charge in magazine deals +300% damage"
+        }
+      ]
+    },
+    {
+      "id": "hb_armageddon",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +250%, range +100%, infinite magazine. Beam pierces all enemies. 15% chance to summon fire rain (10 fire projectiles from the sky that deal damage and ignite the ground)",
+      "effects": [
+        {
+          "id": "hb_armageddon.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, range +100%, infinite magazine"
+        },
+        {
+          "id": "hb_armageddon.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, range +100%, infinite magazine"
+        },
+        {
+          "id": "hb_armageddon.3",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "range +100%"
+        },
+        {
+          "id": "hb_armageddon.4",
+          "trigger": "PASSIVE",
+          "action": "PIERCING_COUNT",
+          "condition": "ALWAYS",
+          "value": 64.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Beam pierces all enemies"
+        },
+        {
+          "id": "hb_armageddon.5",
+          "trigger": "BLOCK_IMPACT",
+          "action": "FIRE_RAIN",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 15.0
+          },
+          "sourceFragment": "15% chance to summon fire rain (10 fire projectiles from the sky that deal damage and ignite the ground)"
+        }
+      ]
+    }
+  ]
+}

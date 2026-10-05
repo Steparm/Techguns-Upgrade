@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:pulserifle",
+  "upgrades": [
+    {
+      "id": "pul_emitter",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "pul_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "pul_big_battery",
+      "rarity": "COMMON",
+      "description": "+4 charges (total 40)",
+      "effects": [
+        {
+          "id": "pul_big_battery.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+4 charges (total 40)"
+        }
+      ]
+    },
+    {
+      "id": "pul_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "pul_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "pul_quick_charge",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "pul_quick_charge.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "pul_power",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "pul_power.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "pul_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "pul_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "pul_focus_lens",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "pul_focus_lens.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "pul_strong_capacitor",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "pul_strong_capacitor.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "pul_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "pul_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "pul_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion (+2 block radius)",
+      "effects": [
+        {
+          "id": "pul_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion (+2 block radius)"
+        }
+      ]
+    },
+    {
+      "id": "pul_armor_piercing",
+      "rarity": "RARE",
+      "description": "Ignores 35% of target armor",
+      "effects": [
+        {
+          "id": "pul_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.35,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 35% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "pul_double_pulse",
+      "rarity": "RARE",
+      "description": "15% chance to fire twice (uses 2 charges)",
+      "effects": [
+        {
+          "id": "pul_double_pulse.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RANDOM_EXTRA_PROJECTILES",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 1.0
+          },
+          "sourceFragment": "15% chance to fire twice (uses 2 charges)"
+        }
+      ]
+    },
+    {
+      "id": "pul_pulse_storm",
+      "rarity": "EPIC",
+      "description": "Every 5th shot deals double damage",
+      "effects": [
+        {
+          "id": "pul_pulse_storm.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Every 5th shot deals double damage"
+        }
+      ]
+    },
+    {
+      "id": "pul_shockwave",
+      "rarity": "EPIC",
+      "description": "Knocks target back 6 blocks on hit",
+      "effects": [
+        {
+          "id": "pul_shockwave.1",
+          "trigger": "PASSIVE",
+          "action": "KNOCKBACK_BONUS",
+          "condition": "ALWAYS",
+          "value": 6.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks target back 6 blocks on hit"
+        }
+      ]
+    },
+    {
+      "id": "pul_precise_shot",
+      "rarity": "EPIC",
+      "description": "First shot after reload is always critical (x1.5 damage)",
+      "effects": [
+        {
+          "id": "pul_precise_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "FIRST_SHOT_AFTER_RELOAD",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "First shot after reload is always critical (x1.5 damage)"
+        }
+      ]
+    },
+    {
+      "id": "pul_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "pul_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "pul_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +50%, Fire Rate +30%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "pul_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, Accuracy +20%"
+        },
+        {
+          "id": "pul_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7692307692307692,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, Accuracy +20%"
+        },
+        {
+          "id": "pul_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "pul_endless",
+      "rarity": "LEGENDARY",
+      "description": "20% chance not to consume charge",
+      "effects": [
+        {
+          "id": "pul_endless.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "pul_lord_pulse",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1.5% pulse damage (permanent). Max +75%",
+      "effects": [
+        {
+          "id": "pul_lord_pulse.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 75.0
+          },
+          "sourceFragment": "Each kill gives +1.5% pulse damage (permanent). Max +75%"
+        }
+      ]
+    },
+    {
+      "id": "pul_deadly_charge",
+      "rarity": "MYTHIC",
+      "description": "If you charge the shot for >1.5 seconds, it deals +200% damage and explodes",
+      "effects": [
+        {
+          "id": "pul_deadly_charge.1",
+          "trigger": "CHARGE",
+          "action": "CHARGE_THRESHOLD_EXPLOSIVE_DAMAGE",
+          "condition": "CHARGE_BEYOND_TICKS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 30.0
+          },
+          "sourceFragment": "If you charge the shot for >1.5 seconds, it deals +200% damage and explodes"
+        }
+      ]
+    },
+    {
+      "id": "pul_pulse_blast",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, Fire Rate +150%, infinite magazine. Pulses pierce enemies. 15% chance to create a pulse wave — all enemies within 10 blocks take +300% damage and are knocked back 10 blocks",
+      "effects": [
+        {
+          "id": "pul_pulse_blast.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +150%, infinite magazine"
+        },
+        {
+          "id": "pul_pulse_blast.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +150%, infinite magazine"
+        },
+        {
+          "id": "pul_pulse_blast.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +150%, infinite magazine"
+        },
+        {
+          "id": "pul_pulse_blast.4",
+          "trigger": "PASSIVE",
+          "action": "PIERCING_COUNT",
+          "condition": "ALWAYS",
+          "value": 64.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Pulses pierce enemies"
+        },
+        {
+          "id": "pul_pulse_blast.5",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_PULSE_WAVE",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 4.0
+          },
+          "sourceFragment": "15% chance to create a pulse wave — all enemies within 10 blocks take +300% damage and are knocked back 10 blocks"
+        }
+      ]
+    }
+  ]
+}

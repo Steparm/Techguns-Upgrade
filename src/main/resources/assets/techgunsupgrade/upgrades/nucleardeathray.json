@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:nucleardeathray",
+  "upgrades": [
+    {
+      "id": "ad_emitter",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "ad_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "ad_big_battery",
+      "rarity": "COMMON",
+      "description": "+4 charges (total 24)",
+      "effects": [
+        {
+          "id": "ad_big_battery.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+4 charges (total 24)"
+        }
+      ]
+    },
+    {
+      "id": "ad_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "ad_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "ad_quick_charge",
+      "rarity": "COMMON",
+      "description": "Charge drain speed -10%",
+      "effects": [
+        {
+          "id": "ad_quick_charge.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_CONSUMPTION_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.9,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Charge drain speed -10%"
+        }
+      ]
+    },
+    {
+      "id": "ad_power",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "ad_power.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "ad_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "ad_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "ad_focus_lens",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "ad_focus_lens.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "ad_strong_flow",
+      "rarity": "UNCOMMON",
+      "description": "Charge drain speed -20%",
+      "effects": [
+        {
+          "id": "ad_strong_flow.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_CONSUMPTION_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Charge drain speed -20%"
+        }
+      ]
+    },
+    {
+      "id": "ad_radioactive",
+      "rarity": "RARE",
+      "description": "Applies radiation effect for 5 seconds",
+      "effects": [
+        {
+          "id": "ad_radioactive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RADIATION_DURATION",
+          "condition": "ALWAYS",
+          "value": 100.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Applies radiation effect for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "ad_explosive",
+      "rarity": "RARE",
+      "description": "10% chance of small explosion on impact",
+      "effects": [
+        {
+          "id": "ad_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "10% chance of small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "ad_armor_piercing",
+      "rarity": "RARE",
+      "description": "Ignores 35% of target armor",
+      "effects": [
+        {
+          "id": "ad_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.35,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 35% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "ad_wide_beam",
+      "rarity": "RARE",
+      "description": "Beam width +50%",
+      "effects": [
+        {
+          "id": "ad_wide_beam.1",
+          "trigger": "PASSIVE",
+          "action": "BEAM_WIDTH_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Beam width +50%"
+        }
+      ]
+    },
+    {
+      "id": "ad_deadly_radiation",
+      "rarity": "EPIC",
+      "description": "The longer the beam hits a target, the more damage it deals (every 2 seconds +10% up to +100%)",
+      "effects": [
+        {
+          "id": "ad_deadly_radiation.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "DAMAGE_RAMP",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 0.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 40.0
+          },
+          "sourceFragment": "The longer the beam hits a target, the more damage it deals (every 2 seconds +10% up to +100%)"
+        }
+      ]
+    },
+    {
+      "id": "ad_glutton",
+      "rarity": "EPIC",
+      "description": "Charge drain +50%, but damage +50%",
+      "effects": [
+        {
+          "id": "ad_glutton.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "damage +50%"
+        },
+        {
+          "id": "ad_glutton.2",
+          "trigger": "PASSIVE",
+          "action": "AMMO_CONSUMPTION_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Charge drain +50%"
+        }
+      ]
+    },
+    {
+      "id": "ad_chain_beam",
+      "rarity": "EPIC",
+      "description": "Beam can jump to the nearest enemy",
+      "effects": [
+        {
+          "id": "ad_chain_beam.1",
+          "trigger": "PASSIVE",
+          "action": "CHAIN_BEAM_TARGETS",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Beam can jump to the nearest enemy"
+        }
+      ]
+    },
+    {
+      "id": "ad_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "ad_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "ad_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +50%, Beam Width +100%",
+      "effects": [
+        {
+          "id": "ad_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%"
+        },
+        {
+          "id": "ad_monster.2",
+          "trigger": "PASSIVE",
+          "action": "BEAM_WIDTH_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Beam Width +100%"
+        }
+      ]
+    },
+    {
+      "id": "ad_endless",
+      "rarity": "LEGENDARY",
+      "description": "15% chance not to consume charge",
+      "effects": [
+        {
+          "id": "ad_endless.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "15% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "ad_lord_radiation",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1.5% beam damage (permanent). Max +75%",
+      "effects": [
+        {
+          "id": "ad_lord_radiation.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 75.0
+          },
+          "sourceFragment": "Each kill gives +1.5% beam damage (permanent). Max +75%"
+        }
+      ]
+    },
+    {
+      "id": "ad_deadly_heat",
+      "rarity": "MYTHIC",
+      "description": "If the beam hits a target for >5 seconds, the target explodes (+300% damage in 6 block radius)",
+      "effects": [
+        {
+          "id": "ad_deadly_heat.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONTINUOUS_TARGET_EXPLOSION",
+          "condition": "TARGET_BURNING_FOR_TICKS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "If the beam hits a target for >5 seconds, the target explodes (+300% damage in 6 block radius)"
+        }
+      ]
+    },
+    {
+      "id": "ad_nuclear_apocalypse",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +300%, beam width +200%, infinite magazine. Beam pierces all enemies and walls. 10% chance to create a decay zone — all enemies within 10 blocks take damage every second for 10 seconds. If target is hit for more than 3 seconds, it explodes creating a nuclear mushroom. A target killed by this weapon also creates a nuclear explosion",
+      "effects": [
+        {
+          "id": "ad_nuclear_apocalypse.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +300%, beam width +200%, infinite magazine"
+        },
+        {
+          "id": "ad_nuclear_apocalypse.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +300%, beam width +200%, infinite magazine"
+        },
+        {
+          "id": "ad_nuclear_apocalypse.3",
+          "trigger": "PASSIVE",
+          "action": "BEAM_WIDTH_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "beam width +200%"
+        },
+        {
+          "id": "ad_nuclear_apocalypse.4",
+          "trigger": "PASSIVE",
+          "action": "RAILGUN_PIERCE",
+          "condition": "ALWAYS",
+          "value": 160.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Beam pierces all enemies and walls"
+        },
+        {
+          "id": "ad_nuclear_apocalypse.5",
+          "trigger": "BLOCK_IMPACT",
+          "action": "RANDOM_TIMED_ZONE",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 200.0
+          },
+          "sourceFragment": "10% chance to create a decay zone — all enemies within 10 blocks take damage every second for 10 seconds"
+        },
+        {
+          "id": "ad_nuclear_apocalypse.6",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONTINUOUS_NUCLEAR_EXPLOSION",
+          "condition": "TARGET_BURNING_FOR_TICKS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 60.0
+          },
+          "sourceFragment": "If target is hit for more than 3 seconds, it explodes creating a nuclear mushroom"
+        },
+        {
+          "id": "ad_nuclear_apocalypse.7",
+          "trigger": "KILL",
+          "action": "NUCLEAR_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "A target killed by this weapon also creates a nuclear explosion"
+        }
+      ]
+    }
+  ]
+}

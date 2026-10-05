@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:powerhammer",
+  "upgrades": [
+    {
+      "id": "pf_strong_piston",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "pf_strong_piston.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "pf_heavy_frame",
+      "rarity": "COMMON",
+      "description": "Knockback +25%",
+      "effects": [
+        {
+          "id": "pf_heavy_frame.1",
+          "trigger": "MELEE_ATTACK",
+          "action": "KNOCKBACK_BONUS",
+          "condition": "ALWAYS",
+          "value": 0.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knockback +25%"
+        }
+      ]
+    },
+    {
+      "id": "pf_quick_reload",
+      "rarity": "COMMON",
+      "description": "Charge time -15%",
+      "effects": [
+        {
+          "id": "pf_quick_reload.1",
+          "trigger": "CHARGE",
+          "action": "CHARGE_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.85,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Charge time -15%"
+        }
+      ]
+    },
+    {
+      "id": "pf_stabilizer",
+      "rarity": "COMMON",
+      "description": "Attack speed +10%",
+      "effects": [
+        {
+          "id": "pf_stabilizer.1",
+          "trigger": "MELEE_ATTACK",
+          "action": "MELEE_ATTACK_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Attack speed +10%"
+        }
+      ]
+    },
+    {
+      "id": "pf_power",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "pf_power.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "pf_quick_charge",
+      "rarity": "UNCOMMON",
+      "description": "Charge time -25%",
+      "effects": [
+        {
+          "id": "pf_quick_charge.1",
+          "trigger": "CHARGE",
+          "action": "CHARGE_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.75,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Charge time -25%"
+        }
+      ]
+    },
+    {
+      "id": "pf_kinetic",
+      "rarity": "UNCOMMON",
+      "description": "Knockback +50%",
+      "effects": [
+        {
+          "id": "pf_kinetic.1",
+          "trigger": "MELEE_ATTACK",
+          "action": "KNOCKBACK_BONUS",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knockback +50%"
+        }
+      ]
+    },
+    {
+      "id": "pf_shockwave",
+      "rarity": "UNCOMMON",
+      "description": "Creates small shockwave on hit (2 block radius)",
+      "effects": [
+        {
+          "id": "pf_shockwave.1",
+          "trigger": "MELEE_ATTACK",
+          "action": "SHOCKWAVE_RADIUS",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Creates small shockwave on hit (2 block radius)"
+        }
+      ]
+    },
+    {
+      "id": "pf_fire",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "pf_fire.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "pf_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on hit (3 block radius)",
+      "effects": [
+        {
+          "id": "pf_explosive.1",
+          "trigger": "MELEE_ATTACK",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on hit (3 block radius)"
+        }
+      ]
+    },
+    {
+      "id": "pf_armor_piercing",
+      "rarity": "RARE",
+      "description": "Ignores 40% of target armor",
+      "effects": [
+        {
+          "id": "pf_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 40% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "pf_double_strike",
+      "rarity": "RARE",
+      "description": "15% chance to strike twice",
+      "effects": [
+        {
+          "id": "pf_double_strike.1",
+          "trigger": "MELEE_ATTACK",
+          "action": "RANDOM_DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "15% chance to strike twice"
+        }
+      ]
+    },
+    {
+      "id": "pf_deadly_charge",
+      "rarity": "EPIC",
+      "description": "Charged attack deals +100% damage",
+      "effects": [
+        {
+          "id": "pf_deadly_charge.1",
+          "trigger": "CHARGE",
+          "action": "CHARGED_DAMAGE_MULTIPLIER",
+          "condition": "CHARGED_ATTACK",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Charged attack deals +100% damage"
+        }
+      ]
+    },
+    {
+      "id": "pf_magnet",
+      "rarity": "EPIC",
+      "description": "Pulls target in before striking (5 block range)",
+      "effects": [
+        {
+          "id": "pf_magnet.1",
+          "trigger": "PASSIVE",
+          "action": "PULL_TARGET",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Pulls target in before striking (5 block range)"
+        }
+      ]
+    },
+    {
+      "id": "pf_shockwave_epic",
+      "rarity": "EPIC",
+      "description": "Knocks back all enemies within 4 blocks on hit",
+      "effects": [
+        {
+          "id": "pf_shockwave_epic.1",
+          "trigger": "PASSIVE",
+          "action": "SHOCKWAVE_RADIUS",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks back all enemies within 4 blocks on hit"
+        }
+      ]
+    },
+    {
+      "id": "pf_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "pf_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "pf_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +60%, Knockback +50%",
+      "effects": [
+        {
+          "id": "pf_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.6,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%"
+        },
+        {
+          "id": "pf_monster.2",
+          "trigger": "PASSIVE",
+          "action": "KNOCKBACK_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knockback +50%"
+        }
+      ]
+    },
+    {
+      "id": "pf_endless_charge",
+      "rarity": "LEGENDARY",
+      "description": "Charged attack requires no charge time",
+      "effects": [
+        {
+          "id": "pf_endless_charge.1",
+          "trigger": "PASSIVE",
+          "action": "INSTANT_CHARGE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Charged attack requires no charge time"
+        }
+      ]
+    },
+    {
+      "id": "pf_crusher",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "pf_crusher.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "pf_hell_strike",
+      "rarity": "MYTHIC",
+      "description": "15% chance to cause an explosion dealing +200% damage to all enemies within 5 blocks and igniting for 5 seconds",
+      "effects": [
+        {
+          "id": "pf_hell_strike.1",
+          "trigger": "MELEE_ATTACK",
+          "action": "MELEE_AREA_EXPLOSION",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "15% chance to cause an explosion dealing +200% damage to all enemies within 5 blocks and igniting for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "pf_fist_of_god",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +300%, instant charge. Creates a seismic wave — all enemies within 15 blocks are knocked back 20 blocks and take 50% damage. 20% chance to summon an earthquake on kill",
+      "effects": [
+        {
+          "id": "pf_fist_of_god.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +300%"
+        },
+        {
+          "id": "pf_fist_of_god.2",
+          "trigger": "PASSIVE",
+          "action": "INSTANT_CHARGE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "instant charge"
+        },
+        {
+          "id": "pf_fist_of_god.3",
+          "trigger": "MELEE_ATTACK",
+          "action": "SEISMIC_WAVE",
+          "condition": "ALWAYS",
+          "value": 15.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 20.0
+          },
+          "sourceFragment": "Creates a seismic wave — all enemies within 15 blocks are knocked back 20 blocks and take 50% damage"
+        },
+        {
+          "id": "pf_fist_of_god.4",
+          "trigger": "KILL",
+          "action": "KILL_EARTHQUAKE",
+          "condition": "ALWAYS",
+          "value": 15.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance to summon an earthquake on kill"
+        }
+      ]
+    }
+  ]
+}

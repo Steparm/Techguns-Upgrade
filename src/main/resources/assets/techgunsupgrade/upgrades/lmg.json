@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:lmg",
+  "upgrades": [
+    {
+      "id": "lmg_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "lmg_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_long_mag",
+      "rarity": "COMMON",
+      "description": "+20 ammo (total 120)",
+      "effects": [
+        {
+          "id": "lmg_long_mag.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 20.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20 ammo (total 120)"
+        }
+      ]
+    },
+    {
+      "id": "lmg_bipod",
+      "rarity": "COMMON",
+      "description": "-20% spread when prone",
+      "effects": [
+        {
+          "id": "lmg_bipod.1",
+          "trigger": "PASSIVE",
+          "action": "CONDITIONAL_SPREAD_MULTIPLIER",
+          "condition": "PRONE",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "-20% spread when prone"
+        }
+      ]
+    },
+    {
+      "id": "lmg_strong_spring",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "lmg_strong_spring.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "lmg_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "lmg_scope",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "lmg_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "lmg_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_power_bolt",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "lmg_power_bolt.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "lmg_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "lmg_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "lmg_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "lmg_storm_fire",
+      "rarity": "RARE",
+      "description": "Fire Rate +40%",
+      "effects": [
+        {
+          "id": "lmg_storm_fire.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7142857142857143,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +40%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_heavy_barrel_2",
+      "rarity": "RARE",
+      "description": "Damage +30%, but Fire Rate -15%",
+      "effects": [
+        {
+          "id": "lmg_heavy_barrel_2.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%"
+        },
+        {
+          "id": "lmg_heavy_barrel_2.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1764705882352942,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate -15%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_hail",
+      "rarity": "EPIC",
+      "description": "Every 10th shot deals double damage",
+      "effects": [
+        {
+          "id": "lmg_hail.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 10.0
+          },
+          "sourceFragment": "Every 10th shot deals double damage"
+        }
+      ]
+    },
+    {
+      "id": "lmg_suppression",
+      "rarity": "EPIC",
+      "description": "Enemies within 5 blocks of impact get slowed for 1 second",
+      "effects": [
+        {
+          "id": "lmg_suppression.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "SUPPRESSION",
+          "condition": "ALWAYS",
+          "value": 20.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Enemies within 5 blocks of impact get slowed for 1 second"
+        }
+      ]
+    },
+    {
+      "id": "lmg_long_burst",
+      "rarity": "EPIC",
+      "description": "Firing more than 30 shots without reloading gives +25% damage",
+      "effects": [
+        {
+          "id": "lmg_long_burst.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "BURST_THRESHOLD_DAMAGE_MULTIPLIER",
+          "condition": "SHOT_SEQUENCE_BEYOND",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 30.0
+          },
+          "sourceFragment": "Firing more than 30 shots without reloading gives +25% damage"
+        }
+      ]
+    },
+    {
+      "id": "lmg_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "lmg_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "lmg_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +40%, Fire Rate +50%, but -25% accuracy",
+      "effects": [
+        {
+          "id": "lmg_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -25% accuracy"
+        },
+        {
+          "id": "lmg_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -25% accuracy"
+        },
+        {
+          "id": "lmg_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -25% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "lmg_combat",
+      "rarity": "LEGENDARY",
+      "description": "Damage +30%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "lmg_combat.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        },
+        {
+          "id": "lmg_combat.2",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_machine_gunner",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% Fire Rate (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "lmg_machine_gunner.1",
+          "trigger": "KILL",
+          "action": "STACK_FIRE_RATE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% Fire Rate (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "lmg_deadly_queue",
+      "rarity": "MYTHIC",
+      "description": "If you empty all 100 shots into one enemy, last bullet deals +500% damage",
+      "effects": [
+        {
+          "id": "lmg_deadly_queue.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "FULL_MAG_TARGET_DAMAGE",
+          "condition": "FULL_MAGAZINE_SAME_TARGET",
+          "value": 6.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "If you empty all 100 shots into one enemy, last bullet deals +500% damage"
+        }
+      ]
+    },
+    {
+      "id": "lmg_firestorm",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +150%, Fire Rate +200%, infinite magazine. Every 10th shot creates a firestorm — 10 extra bullets in all directions within 5 blocks",
+      "effects": [
+        {
+          "id": "lmg_firestorm.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lmg_firestorm.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.3333333333333333,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lmg_firestorm.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lmg_firestorm.4",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RADIAL_PROJECTILE_BURST",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 10.0,
+          "probability": 0.0,
+          "parameters": {
+            "conditionValue": 10.0
+          },
+          "sourceFragment": "Every 10th shot creates a firestorm — 10 extra bullets in all directions within 5 blocks"
+        },
+        {
+          "id": "lmg_firestorm.5",
+          "trigger": "PASSIVE",
+          "action": "RADIAL_BURST_RANGE",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Every 10th shot creates a firestorm — 10 extra bullets in all directions within 5 blocks"
+        }
+      ]
+    }
+  ]
+}

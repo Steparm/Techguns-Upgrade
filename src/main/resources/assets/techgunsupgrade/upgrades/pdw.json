@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:pdw",
+  "upgrades": [
+    {
+      "id": "p90_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "p90_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "p90_long_mag",
+      "rarity": "COMMON",
+      "description": "+5 ammo (total 45)",
+      "effects": [
+        {
+          "id": "p90_long_mag.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+5 ammo (total 45)"
+        }
+      ]
+    },
+    {
+      "id": "p90_stock",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "p90_stock.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "p90_strong_spring",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "p90_strong_spring.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "p90_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "p90_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "p90_holo",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "p90_holo.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "p90_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "p90_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "p90_power_bolt",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "p90_power_bolt.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "p90_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "p90_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "p90_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "p90_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "p90_speed_fire",
+      "rarity": "RARE",
+      "description": "Fire Rate +35%",
+      "effects": [
+        {
+          "id": "p90_speed_fire.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7407407407407407,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +35%"
+        }
+      ]
+    },
+    {
+      "id": "p90_double_burst",
+      "rarity": "RARE",
+      "description": "10% chance to fire 2 bullets at once",
+      "effects": [
+        {
+          "id": "p90_double_burst.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RANDOM_EXTRA_PROJECTILES",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "10% chance to fire 2 bullets at once"
+        }
+      ]
+    },
+    {
+      "id": "p90_fire_storm",
+      "rarity": "EPIC",
+      "description": "Every 5th shot deals double damage",
+      "effects": [
+        {
+          "id": "p90_fire_storm.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Every 5th shot deals double damage"
+        }
+      ]
+    },
+    {
+      "id": "p90_mobile",
+      "rarity": "EPIC",
+      "description": "+20% movement speed while firing",
+      "effects": [
+        {
+          "id": "p90_mobile.1",
+          "trigger": "WHILE_HELD",
+          "action": "FIRING_MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% movement speed while firing"
+        }
+      ]
+    },
+    {
+      "id": "p90_long_burst",
+      "rarity": "EPIC",
+      "description": "Burst of >10 shots deals +20% damage",
+      "effects": [
+        {
+          "id": "p90_long_burst.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "BURST_THRESHOLD_DAMAGE_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 10.0
+          },
+          "sourceFragment": "Burst of >10 shots deals +20% damage"
+        }
+      ]
+    },
+    {
+      "id": "p90_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "p90_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "p90_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +40%, Fire Rate +50%, but -20% accuracy",
+      "effects": [
+        {
+          "id": "p90_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -20% accuracy"
+        },
+        {
+          "id": "p90_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -20% accuracy"
+        },
+        {
+          "id": "p90_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -20% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "p90_combat",
+      "rarity": "LEGENDARY",
+      "description": "Damage +30%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "p90_combat.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        },
+        {
+          "id": "p90_combat.2",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "p90_speed",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1.5% Fire Rate (permanent). Max +75%",
+      "effects": [
+        {
+          "id": "p90_speed.1",
+          "trigger": "KILL",
+          "action": "STACK_FIRE_RATE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 75.0
+          },
+          "sourceFragment": "Each kill gives +1.5% Fire Rate (permanent). Max +75%"
+        }
+      ]
+    },
+    {
+      "id": "p90_deadly_mag",
+      "rarity": "MYTHIC",
+      "description": "If you empty all 40 shots into one enemy, last bullet deals +500% damage",
+      "effects": [
+        {
+          "id": "p90_deadly_mag.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "FULL_MAG_TARGET_DAMAGE",
+          "condition": "FULL_MAGAZINE_SAME_TARGET",
+          "value": 6.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 40.0
+          },
+          "sourceFragment": "If you empty all 40 shots into one enemy, last bullet deals +500% damage"
+        }
+      ]
+    },
+    {
+      "id": "p90_machine_gun",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +150%, Fire Rate +200%, infinite magazine. Every 5th shot fires an extra burst of 5 bullets at nearest enemies. 10% chance to create a hail of bullets — 10 extra bullets in all directions",
+      "effects": [
+        {
+          "id": "p90_machine_gun.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "p90_machine_gun.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.3333333333333333,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "p90_machine_gun.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "p90_machine_gun.4",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "TARGETED_PROJECTILE_BURST",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 5.0,
+          "probability": 0.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Every 5th shot fires an extra burst of 5 bullets at nearest enemies"
+        },
+        {
+          "id": "p90_machine_gun.5",
+          "trigger": "PASSIVE",
+          "action": "TARGETED_BURST_RANGE",
+          "condition": "ALWAYS",
+          "value": 24.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Every 5th shot fires an extra burst of 5 bullets at nearest enemies"
+        },
+        {
+          "id": "p90_machine_gun.6",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RADIAL_PROJECTILE_BURST",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "10% chance to create a hail of bullets — 10 extra bullets in all directions"
+        },
+        {
+          "id": "p90_machine_gun.7",
+          "trigger": "PASSIVE",
+          "action": "RADIAL_BURST_RANGE",
+          "condition": "ALWAYS",
+          "value": 12.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Every 5th shot fires an extra burst of 5 bullets at nearest enemies"
+        }
+      ]
+    }
+  ]
+}

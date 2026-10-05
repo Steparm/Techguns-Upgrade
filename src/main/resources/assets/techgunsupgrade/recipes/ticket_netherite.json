@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "PDP",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "type": "forge:ore_dict",
+      "ore": "ingotNetherite"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "D": {
+      "item": "techgunsupgrade:ticket_diamond"
+    }
+  },
+  "result": {
+    "item": "techgunsupgrade:ticket_netherite",
+    "count": 1
+  }
+}

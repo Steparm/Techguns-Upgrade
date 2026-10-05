@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:sonicshotgun",
+  "upgrades": [
+    {
+      "id": "sr_emitter",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "sr_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "sr_big_resonator",
+      "rarity": "COMMON",
+      "description": "+1 charge (total 9)",
+      "effects": [
+        {
+          "id": "sr_big_resonator.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+1 charge (total 9)"
+        }
+      ]
+    },
+    {
+      "id": "sr_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "sr_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "sr_quick_tune",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "sr_quick_tune.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "sr_power_wave",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "sr_power_wave.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "sr_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "sr_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "sr_focus_emitter",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "sr_focus_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "sr_power_pulse",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "sr_power_pulse.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "sr_stun",
+      "rarity": "RARE",
+      "description": "Stun duration +1 second (total 3 seconds)",
+      "effects": [
+        {
+          "id": "sr_stun.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "STUN_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Stun duration +1 second (total 3 seconds)"
+        }
+      ]
+    },
+    {
+      "id": "sr_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact (+2 block radius)",
+      "effects": [
+        {
+          "id": "sr_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact (+2 block radius)"
+        }
+      ]
+    },
+    {
+      "id": "sr_piercing",
+      "rarity": "RARE",
+      "description": "Sound wave pierces enemies (up to 3 targets)",
+      "effects": [
+        {
+          "id": "sr_piercing.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "PIERCING_COUNT",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Sound wave pierces enemies (up to 3 targets)"
+        }
+      ]
+    },
+    {
+      "id": "sr_double_wave",
+      "rarity": "RARE",
+      "description": "15% chance to fire twice (uses 2 charges)",
+      "effects": [
+        {
+          "id": "sr_double_wave.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RANDOM_EXTRA_PROJECTILES",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 1.0
+          },
+          "sourceFragment": "15% chance to fire twice (uses 2 charges)"
+        }
+      ]
+    },
+    {
+      "id": "sr_shockwave",
+      "rarity": "EPIC",
+      "description": "Knocks target back 8 blocks on hit",
+      "effects": [
+        {
+          "id": "sr_shockwave.1",
+          "trigger": "PASSIVE",
+          "action": "KNOCKBACK_BONUS",
+          "condition": "ALWAYS",
+          "value": 8.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks target back 8 blocks on hit"
+        }
+      ]
+    },
+    {
+      "id": "sr_deadly_resonance",
+      "rarity": "EPIC",
+      "description": "If two shots hit the same target consecutively, second deals +150% damage",
+      "effects": [
+        {
+          "id": "sr_deadly_resonance.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONSECUTIVE_TARGET_DAMAGE_MULTIPLIER",
+          "condition": "CONSECUTIVE_SAME_TARGET",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If two shots hit the same target consecutively, second deals +150% damage"
+        }
+      ]
+    },
+    {
+      "id": "sr_silence",
+      "rarity": "EPIC",
+      "description": "Shot makes no sound",
+      "effects": [
+        {
+          "id": "sr_silence.1",
+          "trigger": "PASSIVE",
+          "action": "SILENCE_SHOT",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Shot makes no sound"
+        }
+      ]
+    },
+    {
+      "id": "sr_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "sr_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "sr_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +50%, Range +50%",
+      "effects": [
+        {
+          "id": "sr_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%"
+        },
+        {
+          "id": "sr_monster.2",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Range +50%"
+        }
+      ]
+    },
+    {
+      "id": "sr_endless",
+      "rarity": "LEGENDARY",
+      "description": "20% chance not to consume charge",
+      "effects": [
+        {
+          "id": "sr_endless.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "sr_lord_sound",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% sonic damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "sr_lord_sound.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% sonic damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "sr_deadly_resonance_m",
+      "rarity": "MYTHIC",
+      "description": "If target is already stunned, next shot deals +300% damage",
+      "effects": [
+        {
+          "id": "sr_deadly_resonance_m.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "STUNNED_TARGET_DAMAGE",
+          "condition": "TARGET_STUNNED",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If target is already stunned, next shot deals +300% damage"
+        }
+      ]
+    },
+    {
+      "id": "sr_symphony",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +250%, radius +200%, infinite magazine. Sound wave pierces all enemies and walls. 10% chance to create a sonic explosion — stuns all enemies within 15 blocks for 5 seconds and deals +200% damage",
+      "effects": [
+        {
+          "id": "sr_symphony.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "sr_symphony.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "sr_symphony.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "sr_symphony.4",
+          "trigger": "PASSIVE",
+          "action": "RAILGUN_PIERCE",
+          "condition": "ALWAYS",
+          "value": 160.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Sound wave pierces all enemies and walls"
+        },
+        {
+          "id": "sr_symphony.5",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_SONIC_WAVE",
+          "condition": "ALWAYS",
+          "value": 15.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 3.0
+          },
+          "sourceFragment": "10% chance to create a sonic explosion — stuns all enemies within 15 blocks for 5 seconds and deals +200% damage"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:revolver",
+  "upgrades": [
+    {
+      "id": "rev_heavy_trigger",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "rev_heavy_trigger.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "rev_long_barrel",
+      "rarity": "COMMON",
+      "description": "+30% range",
+      "effects": [
+        {
+          "id": "rev_long_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+30% range"
+        }
+      ]
+    },
+    {
+      "id": "rev_handle_grip",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "rev_handle_grip.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "rev_big_cylinder",
+      "rarity": "COMMON",
+      "description": "+1 ammo in cylinder (total 7)",
+      "effects": [
+        {
+          "id": "rev_big_cylinder.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+1 ammo in cylinder (total 7)"
+        }
+      ]
+    },
+    {
+      "id": "rev_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "rev_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "rev_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "rev_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "rev_scope",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20% (more accurate)",
+      "effects": [
+        {
+          "id": "rev_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20% (more accurate)"
+        }
+      ]
+    },
+    {
+      "id": "rev_strong_spring",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "rev_strong_spring.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "rev_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "rev_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "rev_shatter",
+      "rarity": "RARE",
+      "description": "Explodes on impact, dealing area damage (2 block radius)",
+      "effects": [
+        {
+          "id": "rev_shatter.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Explodes on impact, dealing area damage (2 block radius)"
+        }
+      ]
+    },
+    {
+      "id": "rev_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "rev_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "rev_fast_hand",
+      "rarity": "RARE",
+      "description": "+25% Fire Rate when firing on the move",
+      "effects": [
+        {
+          "id": "rev_fast_hand.1",
+          "trigger": "BEFORE_SHOT",
+          "action": "CONDITIONAL_FIRE_DELAY_MULTIPLIER",
+          "condition": "MOVING",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+25% Fire Rate when firing on the move"
+        }
+      ]
+    },
+    {
+      "id": "rev_deadly_shot",
+      "rarity": "EPIC",
+      "description": "Last round in cylinder deals +200% damage",
+      "effects": [
+        {
+          "id": "rev_deadly_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "LAST_ROUND",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Last round in cylinder deals +200% damage"
+        }
+      ]
+    },
+    {
+      "id": "rev_fast_trigger",
+      "rarity": "EPIC",
+      "description": "Fire Rate +40%",
+      "effects": [
+        {
+          "id": "rev_fast_trigger.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7142857142857143,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +40%"
+        }
+      ]
+    },
+    {
+      "id": "rev_precise_shot",
+      "rarity": "EPIC",
+      "description": "First shot after reload is always critical (x1.5 damage)",
+      "effects": [
+        {
+          "id": "rev_precise_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "FIRST_SHOT_AFTER_RELOAD",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "First shot after reload is always critical (x1.5 damage)"
+        }
+      ]
+    },
+    {
+      "id": "rev_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "rev_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "rev_six_shot_hell",
+      "rarity": "LEGENDARY",
+      "description": "Damage +50%, Fire Rate +30%",
+      "effects": [
+        {
+          "id": "rev_six_shot_hell.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%"
+        },
+        {
+          "id": "rev_six_shot_hell.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7692307692307692,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%"
+        }
+      ]
+    },
+    {
+      "id": "rev_sniper",
+      "rarity": "LEGENDARY",
+      "description": "+40% damage at range >20 blocks",
+      "effects": [
+        {
+          "id": "rev_sniper.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "TARGET_BEYOND_DISTANCE",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 20.0
+          },
+          "sourceFragment": "+40% damage at range >20 blocks"
+        }
+      ]
+    },
+    {
+      "id": "rev_fatal_shot",
+      "rarity": "MYTHIC",
+      "description": "20% chance to deal +400% damage",
+      "effects": [
+        {
+          "id": "rev_fatal_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance to deal +400% damage"
+        }
+      ]
+    },
+    {
+      "id": "rev_endless_cylinder",
+      "rarity": "MYTHIC",
+      "description": "15% chance not to consume ammo",
+      "effects": [
+        {
+          "id": "rev_endless_cylinder.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "15% chance not to consume ammo"
+        }
+      ]
+    },
+    {
+      "id": "rev_judge",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, every shot summons lightning, infinite magazine",
+      "effects": [
+        {
+          "id": "rev_judge.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, every shot summons lightning, infinite magazine"
+        },
+        {
+          "id": "rev_judge.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, every shot summons lightning, infinite magazine"
+        },
+        {
+          "id": "rev_judge.3",
+          "trigger": "PASSIVE",
+          "action": "EVERY_SHOT_LIGHTNING",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "every shot summons lightning"
+        }
+      ]
+    }
+  ]
+}

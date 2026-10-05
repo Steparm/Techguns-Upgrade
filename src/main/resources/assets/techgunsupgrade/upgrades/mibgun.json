@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:mibgun",
+  "upgrades": [
+    {
+      "id": "sp_emitter",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "sp_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "sp_big_battery",
+      "rarity": "COMMON",
+      "description": "+3 charges (total 23)",
+      "effects": [
+        {
+          "id": "sp_big_battery.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+3 charges (total 23)"
+        }
+      ]
+    },
+    {
+      "id": "sp_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "sp_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "sp_quick_charge",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "sp_quick_charge.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "sp_power",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "sp_power.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "sp_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "sp_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "sp_focus_lens",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "sp_focus_lens.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "sp_extra_shard",
+      "rarity": "UNCOMMON",
+      "description": "+1 shard on split (total 3-4)",
+      "effects": [
+        {
+          "id": "sp_extra_shard.1",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_ADD",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+1 shard on split (total 3-4)"
+        }
+      ]
+    },
+    {
+      "id": "sp_incendiary",
+      "rarity": "RARE",
+      "description": "Shards ignite target for 3 seconds",
+      "effects": [
+        {
+          "id": "sp_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Shards ignite target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "sp_explosive",
+      "rarity": "RARE",
+      "description": "Each shard has small explosion on impact",
+      "effects": [
+        {
+          "id": "sp_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each shard has small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "sp_armor_piercing",
+      "rarity": "RARE",
+      "description": "Shards ignore 25% of target armor",
+      "effects": [
+        {
+          "id": "sp_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Shards ignore 25% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "sp_cascade",
+      "rarity": "RARE",
+      "description": "Shards can split again (10% chance)",
+      "effects": [
+        {
+          "id": "sp_cascade.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RANDOM_EXTRA_PROJECTILES",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Shards can split again (10% chance)"
+        }
+      ]
+    },
+    {
+      "id": "sp_shard_storm",
+      "rarity": "EPIC",
+      "description": "Every 5th shot creates +2 additional shards",
+      "effects": [
+        {
+          "id": "sp_shard_storm.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PERIODIC_EXTRA_PROJECTILES",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Every 5th shot creates +2 additional shards"
+        }
+      ]
+    },
+    {
+      "id": "sp_point_blank",
+      "rarity": "EPIC",
+      "description": "If fired point-blank (up to 3 blocks), all shards hit target, +75% damage",
+      "effects": [
+        {
+          "id": "sp_point_blank.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "TARGET_WITHIN_DISTANCE",
+          "value": 1.75,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 3.0
+          },
+          "sourceFragment": "If fired point-blank (up to 3 blocks), all shards hit target, +75% damage"
+        }
+      ]
+    },
+    {
+      "id": "sp_chain_reaction",
+      "rarity": "EPIC",
+      "description": "Shards fly +3 blocks further on hit",
+      "effects": [
+        {
+          "id": "sp_chain_reaction.1",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_RANGE_ADD",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Shards fly +3 blocks further on hit"
+        }
+      ]
+    },
+    {
+      "id": "sp_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "sp_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "sp_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +40%, +2 shards on split",
+      "effects": [
+        {
+          "id": "sp_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%"
+        },
+        {
+          "id": "sp_monster.2",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_ADD",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+2 shards on split"
+        }
+      ]
+    },
+    {
+      "id": "sp_endless",
+      "rarity": "LEGENDARY",
+      "description": "20% chance not to consume charge",
+      "effects": [
+        {
+          "id": "sp_endless.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "sp_entropy",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1.5% shard damage (permanent). Max +75%",
+      "effects": [
+        {
+          "id": "sp_entropy.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 75.0
+          },
+          "sourceFragment": "Each kill gives +1.5% shard damage (permanent). Max +75%"
+        }
+      ]
+    },
+    {
+      "id": "sp_cascade_death",
+      "rarity": "MYTHIC",
+      "description": "If primary shot hits an enemy, shards split 2 more times (up to 12 shards)",
+      "effects": [
+        {
+          "id": "sp_cascade_death.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CASCADE_ON_HIT",
+          "condition": "ALWAYS",
+          "value": 12.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If primary shot hits an enemy, shards split 2 more times (up to 12 shards)"
+        }
+      ]
+    },
+    {
+      "id": "sp_reality_split",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, infinite magazine. Shards split infinitely (each shard creates 2 more). 15% chance to create a zone of instability — all enemies within 8 blocks take damage every second for 5 seconds",
+      "effects": [
+        {
+          "id": "sp_reality_split.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, infinite magazine"
+        },
+        {
+          "id": "sp_reality_split.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, infinite magazine"
+        },
+        {
+          "id": "sp_reality_split.3",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INFINITE_SPLIT",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 6.0
+          },
+          "sourceFragment": "Shards split infinitely (each shard creates 2 more)"
+        },
+        {
+          "id": "sp_reality_split.4",
+          "trigger": "BLOCK_IMPACT",
+          "action": "RANDOM_TIMED_ZONE",
+          "condition": "ALWAYS",
+          "value": 8.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "15% chance to create a zone of instability — all enemies within 8 blocks take damage every second for 5 seconds"
+        }
+      ]
+    }
+  ]
+}

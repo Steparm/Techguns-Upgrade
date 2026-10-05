@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:laserpistol",
+  "upgrades": [
+    {
+      "id": "lp_emitter",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "lp_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "lp_big_battery",
+      "rarity": "COMMON",
+      "description": "+3 charges (total 23)",
+      "effects": [
+        {
+          "id": "lp_big_battery.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+3 charges (total 23)"
+        }
+      ]
+    },
+    {
+      "id": "lp_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "lp_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "lp_quick_charge",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "lp_quick_charge.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "lp_power",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "lp_power.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "lp_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "lp_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "lp_focus_lens",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "lp_focus_lens.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "lp_power_pulse",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "lp_power_pulse.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "lp_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "lp_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "lp_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "lp_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "lp_armor_piercing",
+      "rarity": "RARE",
+      "description": "Ignores 25% of target armor",
+      "effects": [
+        {
+          "id": "lp_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 25% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "lp_double_beam",
+      "rarity": "RARE",
+      "description": "15% chance to fire twice (uses 2 charges)",
+      "effects": [
+        {
+          "id": "lp_double_beam.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RANDOM_EXTRA_PROJECTILES",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 1.0
+          },
+          "sourceFragment": "15% chance to fire twice (uses 2 charges)"
+        }
+      ]
+    },
+    {
+      "id": "lp_deadly_double",
+      "rarity": "EPIC",
+      "description": "If two shots hit the same target consecutively, second deals +150% damage",
+      "effects": [
+        {
+          "id": "lp_deadly_double.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONSECUTIVE_TARGET_DAMAGE_MULTIPLIER",
+          "condition": "CONSECUTIVE_SAME_TARGET",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If two shots hit the same target consecutively, second deals +150% damage"
+        }
+      ]
+    },
+    {
+      "id": "lp_mobile",
+      "rarity": "EPIC",
+      "description": "+20% movement speed while firing",
+      "effects": [
+        {
+          "id": "lp_mobile.1",
+          "trigger": "WHILE_HELD",
+          "action": "FIRING_MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% movement speed while firing"
+        }
+      ]
+    },
+    {
+      "id": "lp_precise_shot",
+      "rarity": "EPIC",
+      "description": "First shot after reload is always critical (x1.5 damage)",
+      "effects": [
+        {
+          "id": "lp_precise_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "FIRST_SHOT_AFTER_RELOAD",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "First shot after reload is always critical (x1.5 damage)"
+        }
+      ]
+    },
+    {
+      "id": "lp_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "lp_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "lp_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +40%, Fire Rate +40%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "lp_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +40%, Accuracy +20%"
+        },
+        {
+          "id": "lp_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7142857142857143,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +40%, Accuracy +20%"
+        },
+        {
+          "id": "lp_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +40%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "lp_endless",
+      "rarity": "LEGENDARY",
+      "description": "20% chance not to consume charge",
+      "effects": [
+        {
+          "id": "lp_endless.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "lp_lord_light",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% accuracy (permanent). Max +50%",
+      "effects": [
+        {
+          "id": "lp_lord_light.1",
+          "trigger": "KILL",
+          "action": "STACK_ACCURACY_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 50.0
+          },
+          "sourceFragment": "Each kill gives +2% accuracy (permanent). Max +50%"
+        }
+      ]
+    },
+    {
+      "id": "lp_deadly_beam",
+      "rarity": "MYTHIC",
+      "description": "If you hit a critical zone/headshot, the shot deals +300% damage and creates a shockwave",
+      "effects": [
+        {
+          "id": "lp_deadly_beam.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "HEADSHOT_SHOCKWAVE",
+          "condition": "HEADSHOT",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 6.0
+          },
+          "sourceFragment": "If you hit a critical zone/headshot, the shot deals +300% damage and creates a shockwave"
+        }
+      ]
+    },
+    {
+      "id": "lp_light_of_doom",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, Fire Rate +200%, infinite magazine. Beam pierces enemies. 10% chance to summon a light explosion — blinds all enemies within 10 blocks for 5 seconds and deals +200% damage",
+      "effects": [
+        {
+          "id": "lp_light_of_doom.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lp_light_of_doom.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.3333333333333333,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lp_light_of_doom.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "lp_light_of_doom.4",
+          "trigger": "PASSIVE",
+          "action": "PIERCING_COUNT",
+          "condition": "ALWAYS",
+          "value": 64.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Beam pierces enemies"
+        },
+        {
+          "id": "lp_light_of_doom.5",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_LIGHT_EXPLOSION",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 3.0
+          },
+          "sourceFragment": "10% chance to summon a light explosion — blinds all enemies within 10 blocks for 5 seconds and deals +200% damage"
+        }
+      ]
+    }
+  ]
+}

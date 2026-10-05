@@ -1,0 +1,12 @@
+{
+  "nuclear_warning": {
+    "category": "master",
+    "subtitle": "sound.techgunsupgrade.nuclear_warning",
+    "sounds": [
+      {
+        "name": "techgunsupgrade:nuclear_warning",
+        "stream": true
+      }
+    ]
+  }
+}

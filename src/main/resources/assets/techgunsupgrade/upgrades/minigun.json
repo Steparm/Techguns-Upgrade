@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:minigun",
+  "upgrades": [
+    {
+      "id": "min_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "min_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "min_long_mag",
+      "rarity": "COMMON",
+      "description": "+40 ammo (total 240)",
+      "effects": [
+        {
+          "id": "min_long_mag.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 40.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+40 ammo (total 240)"
+        }
+      ]
+    },
+    {
+      "id": "min_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "min_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "min_strong_motor",
+      "rarity": "COMMON",
+      "description": "Spin-up speed +30%",
+      "effects": [
+        {
+          "id": "min_strong_motor.1",
+          "trigger": "BEFORE_SHOT",
+          "action": "SPIN_UP_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7692307692307692,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spin-up speed +30%"
+        }
+      ]
+    },
+    {
+      "id": "min_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "min_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "min_scope",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "min_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "min_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "min_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "min_power_motor",
+      "rarity": "UNCOMMON",
+      "description": "Max Fire Rate +20%",
+      "effects": [
+        {
+          "id": "min_power_motor.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Max Fire Rate +20%"
+        }
+      ]
+    },
+    {
+      "id": "min_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "min_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "min_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "min_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "min_hurricane",
+      "rarity": "RARE",
+      "description": "Max Fire Rate +30%",
+      "effects": [
+        {
+          "id": "min_hurricane.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7692307692307692,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Max Fire Rate +30%"
+        }
+      ]
+    },
+    {
+      "id": "min_heavy_barrel_2",
+      "rarity": "RARE",
+      "description": "Damage +30%, but Fire Rate -15%",
+      "effects": [
+        {
+          "id": "min_heavy_barrel_2.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%"
+        },
+        {
+          "id": "min_heavy_barrel_2.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1764705882352942,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate -15%"
+        }
+      ]
+    },
+    {
+      "id": "min_hail_lead",
+      "rarity": "EPIC",
+      "description": "Every 10th shot deals double damage",
+      "effects": [
+        {
+          "id": "min_hail_lead.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 10.0
+          },
+          "sourceFragment": "Every 10th shot deals double damage"
+        }
+      ]
+    },
+    {
+      "id": "min_suppression",
+      "rarity": "EPIC",
+      "description": "Enemies within 5 blocks of impact get slowed for 1.5 seconds",
+      "effects": [
+        {
+          "id": "min_suppression.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "SUPPRESSION",
+          "condition": "ALWAYS",
+          "value": 30.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Enemies within 5 blocks of impact get slowed for 1.5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "min_long_burst",
+      "rarity": "EPIC",
+      "description": "Firing more than 50 shots without reloading gives +25% damage",
+      "effects": [
+        {
+          "id": "min_long_burst.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "BURST_THRESHOLD_DAMAGE_MULTIPLIER",
+          "condition": "SHOT_SEQUENCE_BEYOND",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 50.0
+          },
+          "sourceFragment": "Firing more than 50 shots without reloading gives +25% damage"
+        }
+      ]
+    },
+    {
+      "id": "min_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "min_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "min_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +40%, Fire Rate +50%, but -25% accuracy",
+      "effects": [
+        {
+          "id": "min_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -25% accuracy"
+        },
+        {
+          "id": "min_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -25% accuracy"
+        },
+        {
+          "id": "min_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -25% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "min_combat",
+      "rarity": "LEGENDARY",
+      "description": "Damage +30%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "min_combat.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        },
+        {
+          "id": "min_combat.2",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "min_hurricane_death",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% Fire Rate (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "min_hurricane_death.1",
+          "trigger": "KILL",
+          "action": "STACK_FIRE_RATE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% Fire Rate (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "min_deadly_storm",
+      "rarity": "MYTHIC",
+      "description": "If you empty all 200 shots into one enemy, last bullet deals +600% damage",
+      "effects": [
+        {
+          "id": "min_deadly_storm.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "FULL_MAG_TARGET_DAMAGE",
+          "condition": "FULL_MAGAZINE_SAME_TARGET",
+          "value": 7.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 200.0
+          },
+          "sourceFragment": "If you empty all 200 shots into one enemy, last bullet deals +600% damage"
+        }
+      ]
+    },
+    {
+      "id": "min_hurricane_death_ultra",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, Fire Rate +200%, infinite magazine. Instant spin-up. Every 10th shot creates a wave of bullets in all directions within 10 blocks",
+      "effects": [
+        {
+          "id": "min_hurricane_death_ultra.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "min_hurricane_death_ultra.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.3333333333333333,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "min_hurricane_death_ultra.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "min_hurricane_death_ultra.4",
+          "trigger": "PASSIVE",
+          "action": "SPIN_UP_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.01,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Instant spin-up"
+        },
+        {
+          "id": "min_hurricane_death_ultra.5",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RADIAL_PROJECTILE_BURST",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 20.0,
+          "probability": 0.0,
+          "parameters": {
+            "conditionValue": 10.0
+          },
+          "sourceFragment": "Every 10th shot creates a wave of bullets in all directions within 10 blocks"
+        },
+        {
+          "id": "min_hurricane_death_ultra.6",
+          "trigger": "PASSIVE",
+          "action": "RADIAL_BURST_RANGE",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Every 10th shot creates a wave of bullets in all directions within 10 blocks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:scar",
+  "upgrades": [
+    {
+      "id": "scar_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "scar_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "scar_long_mag",
+      "rarity": "COMMON",
+      "description": "+4 ammo (total 24)",
+      "effects": [
+        {
+          "id": "scar_long_mag.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+4 ammo (total 24)"
+        }
+      ]
+    },
+    {
+      "id": "scar_stock",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "scar_stock.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "scar_strong_spring",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "scar_strong_spring.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "scar_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "scar_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "scar_scope",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "scar_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "scar_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "scar_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "scar_power_bolt",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "scar_power_bolt.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "scar_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "scar_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "scar_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "scar_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "scar_armor_piercing",
+      "rarity": "RARE",
+      "description": "Ignore 30% of target armor",
+      "effects": [
+        {
+          "id": "scar_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignore 30% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "scar_heavy_bullet",
+      "rarity": "RARE",
+      "description": "Damage +30%, but Fire Rate -15%",
+      "effects": [
+        {
+          "id": "scar_heavy_bullet.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%"
+        },
+        {
+          "id": "scar_heavy_bullet.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1764705882352942,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate -15%"
+        }
+      ]
+    },
+    {
+      "id": "scar_fire_storm",
+      "rarity": "EPIC",
+      "description": "Every 5th shot deals double damage",
+      "effects": [
+        {
+          "id": "scar_fire_storm.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Every 5th shot deals double damage"
+        }
+      ]
+    },
+    {
+      "id": "scar_tactical",
+      "rarity": "EPIC",
+      "description": "+15% movement speed while firing",
+      "effects": [
+        {
+          "id": "scar_tactical.1",
+          "trigger": "WHILE_HELD",
+          "action": "FIRING_MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+15% movement speed while firing"
+        }
+      ]
+    },
+    {
+      "id": "scar_sharpshooter",
+      "rarity": "EPIC",
+      "description": "First shot after reload is always critical (x1.5 damage)",
+      "effects": [
+        {
+          "id": "scar_sharpshooter.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "FIRST_SHOT_AFTER_RELOAD",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "First shot after reload is always critical (x1.5 damage)"
+        }
+      ]
+    },
+    {
+      "id": "scar_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "scar_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "scar_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +50%, Fire Rate +30%, but -15% accuracy",
+      "effects": [
+        {
+          "id": "scar_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, but -15% accuracy"
+        },
+        {
+          "id": "scar_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7692307692307692,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, but -15% accuracy"
+        },
+        {
+          "id": "scar_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%, Fire Rate +30%, but -15% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "scar_combat",
+      "rarity": "LEGENDARY",
+      "description": "Damage +35%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "scar_combat.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.35,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +35%, Accuracy +20%"
+        },
+        {
+          "id": "scar_combat.2",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +35%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "scar_sniper",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1.5% damage (permanent). Max +75%",
+      "effects": [
+        {
+          "id": "scar_sniper.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 75.0
+          },
+          "sourceFragment": "Each kill gives +1.5% damage (permanent). Max +75%"
+        }
+      ]
+    },
+    {
+      "id": "scar_deadly_shot",
+      "rarity": "MYTHIC",
+      "description": "If you kill an enemy with the first shot, next shot deals +300% damage",
+      "effects": [
+        {
+          "id": "scar_deadly_shot.1",
+          "trigger": "KILL",
+          "action": "FIRST_SHOT_KILL_NEXT_DAMAGE",
+          "condition": "FIRST_SHOT_KILL",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If you kill an enemy with the first shot, next shot deals +300% damage"
+        }
+      ]
+    },
+    {
+      "id": "scar_legendary",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, Fire Rate +150%, Accuracy +100%, infinite magazine. Every 3rd shot deals +400% damage. 5% chance to instantly kill enemies",
+      "effects": [
+        {
+          "id": "scar_legendary.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +150%, Accuracy +100%, infinite magazine"
+        },
+        {
+          "id": "scar_legendary.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +150%, Accuracy +100%, infinite magazine"
+        },
+        {
+          "id": "scar_legendary.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +150%, Accuracy +100%, infinite magazine"
+        },
+        {
+          "id": "scar_legendary.4",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +150%, Accuracy +100%, infinite magazine"
+        },
+        {
+          "id": "scar_legendary.5",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 3.0
+          },
+          "sourceFragment": "Every 3rd shot deals +400% damage"
+        },
+        {
+          "id": "scar_legendary.6",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_INSTANT_KILL",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.05,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "5% chance to instantly kill enemies"
+        }
+      ]
+    }
+  ]
+}

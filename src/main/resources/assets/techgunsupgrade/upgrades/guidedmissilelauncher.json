@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:guidedmissilelauncher",
+  "upgrades": [
+    {
+      "id": "lor_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +15%",
+      "effects": [
+        {
+          "id": "lor_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +15%"
+        }
+      ]
+    },
+    {
+      "id": "lor_long_launcher",
+      "rarity": "COMMON",
+      "description": "Rocket flight range +30%",
+      "effects": [
+        {
+          "id": "lor_long_launcher.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket flight range +30%"
+        }
+      ]
+    },
+    {
+      "id": "lor_light_frame",
+      "rarity": "COMMON",
+      "description": "Movement speed with weapon +10%",
+      "effects": [
+        {
+          "id": "lor_light_frame.1",
+          "trigger": "WHILE_HELD",
+          "action": "MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Movement speed with weapon +10%"
+        }
+      ]
+    },
+    {
+      "id": "lor_scope",
+      "rarity": "COMMON",
+      "description": "Lock-on time -15%",
+      "effects": [
+        {
+          "id": "lor_scope.1",
+          "trigger": "LOCK_ON",
+          "action": "LOCK_ON_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.85,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Lock-on time -15%"
+        }
+      ]
+    },
+    {
+      "id": "lor_high_explosive",
+      "rarity": "UNCOMMON",
+      "description": "Explosion radius +30%",
+      "effects": [
+        {
+          "id": "lor_high_explosive.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Explosion radius +30%"
+        }
+      ]
+    },
+    {
+      "id": "lor_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "lor_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "lor_armor_piercing",
+      "rarity": "UNCOMMON",
+      "description": "Ignores 40% of target armor",
+      "effects": [
+        {
+          "id": "lor_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 40% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "lor_speed_rocket",
+      "rarity": "UNCOMMON",
+      "description": "Rocket flight speed +40%",
+      "effects": [
+        {
+          "id": "lor_speed_rocket.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PROJECTILE_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket flight speed +40%"
+        }
+      ]
+    },
+    {
+      "id": "lor_incendiary",
+      "rarity": "RARE",
+      "description": "Creates a fire zone after explosion for 5 seconds",
+      "effects": [
+        {
+          "id": "lor_incendiary.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "FIRE_ZONE_DURATION",
+          "condition": "ALWAYS",
+          "value": 100.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Creates a fire zone after explosion for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "lor_cluster",
+      "rarity": "RARE",
+      "description": "Splits into 3 smaller rockets on explosion",
+      "effects": [
+        {
+          "id": "lor_cluster.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "CLUSTER_COUNT",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Splits into 3 smaller rockets on explosion"
+        }
+      ]
+    },
+    {
+      "id": "lor_heavy_rocket",
+      "rarity": "RARE",
+      "description": "Damage +50%, but flight speed -20%",
+      "effects": [
+        {
+          "id": "lor_heavy_rocket.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%"
+        },
+        {
+          "id": "lor_heavy_rocket.2",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PROJECTILE_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "flight speed -20%"
+        }
+      ]
+    },
+    {
+      "id": "lor_tactical",
+      "rarity": "RARE",
+      "description": "+20% explosion radius and +20% damage",
+      "effects": [
+        {
+          "id": "lor_tactical.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% damage"
+        },
+        {
+          "id": "lor_tactical.2",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% explosion radius"
+        }
+      ]
+    },
+    {
+      "id": "lor_nuclear",
+      "rarity": "EPIC",
+      "description": "Explosion radius +80%, Damage +60%",
+      "effects": [
+        {
+          "id": "lor_nuclear.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.6,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%"
+        },
+        {
+          "id": "lor_nuclear.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Explosion radius +80%"
+        }
+      ]
+    },
+    {
+      "id": "lor_shockwave",
+      "rarity": "EPIC",
+      "description": "Knocks enemies back 10 blocks from epicenter",
+      "effects": [
+        {
+          "id": "lor_shockwave.1",
+          "trigger": "PASSIVE",
+          "action": "IMPACT_SHOCKWAVE",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks enemies back 10 blocks from epicenter"
+        }
+      ]
+    },
+    {
+      "id": "lor_fast_lock",
+      "rarity": "EPIC",
+      "description": "Lock-on time -50%",
+      "effects": [
+        {
+          "id": "lor_fast_lock.1",
+          "trigger": "PASSIVE",
+          "action": "LOCK_ON_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Lock-on time -50%"
+        }
+      ]
+    },
+    {
+      "id": "lor_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "lor_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "lor_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +80%, Radius +50%",
+      "effects": [
+        {
+          "id": "lor_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +80%, Radius +50%"
+        },
+        {
+          "id": "lor_monster.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +80%, Radius +50%"
+        }
+      ]
+    },
+    {
+      "id": "lor_endless_salvo",
+      "rarity": "LEGENDARY",
+      "description": "15% chance not to consume rocket",
+      "effects": [
+        {
+          "id": "lor_endless_salvo.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "15% chance not to consume rocket"
+        }
+      ]
+    },
+    {
+      "id": "lor_hunter",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% rocket damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "lor_hunter.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% rocket damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "lor_deadly_lock",
+      "rarity": "MYTHIC",
+      "description": "If you kill an enemy with lock-on, next shot has 100% instant lock-on",
+      "effects": [
+        {
+          "id": "lor_deadly_lock.1",
+          "trigger": "KILL",
+          "action": "KILL_INSTANT_LOCK",
+          "condition": "LOCKED_KILL",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If you kill an enemy with lock-on, next shot has 100% instant lock-on"
+        }
+      ]
+    },
+    {
+      "id": "lor_armageddon",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, radius +200%, infinite magazine. Instant lock-on. 10% chance to create a nuclear mushroom destroying everything within 30 blocks. Rocket tracks targets through walls",
+      "effects": [
+        {
+          "id": "lor_armageddon.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "lor_armageddon.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "lor_armageddon.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "lor_armageddon.4",
+          "trigger": "PASSIVE",
+          "action": "INSTANT_LOCK_ON",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Instant lock-on"
+        },
+        {
+          "id": "lor_armageddon.5",
+          "trigger": "BLOCK_IMPACT",
+          "action": "NUCLEAR_IMPACT",
+          "condition": "ALWAYS",
+          "value": 30.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "10% chance to create a nuclear mushroom destroying everything within 30 blocks"
+        },
+        {
+          "id": "lor_armageddon.6",
+          "trigger": "PASSIVE",
+          "action": "THROUGH_WALL_HOMING",
+          "condition": "ALWAYS",
+          "value": 0.16,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket tracks targets through walls"
+        }
+      ]
+    }
+  ]
+}

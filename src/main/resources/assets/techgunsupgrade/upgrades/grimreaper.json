@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:grimreaper",
+  "upgrades": [
+    {
+      "id": "grp_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +15%",
+      "effects": [
+        {
+          "id": "grp_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +15%"
+        }
+      ]
+    },
+    {
+      "id": "grp_long_launcher",
+      "rarity": "COMMON",
+      "description": "Rocket flight range +30%",
+      "effects": [
+        {
+          "id": "grp_long_launcher.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket flight range +30%"
+        }
+      ]
+    },
+    {
+      "id": "grp_light_frame",
+      "rarity": "COMMON",
+      "description": "Movement speed with weapon +10%",
+      "effects": [
+        {
+          "id": "grp_light_frame.1",
+          "trigger": "WHILE_HELD",
+          "action": "MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Movement speed with weapon +10%"
+        }
+      ]
+    },
+    {
+      "id": "grp_scope",
+      "rarity": "COMMON",
+      "description": "Rocket accuracy +15%",
+      "effects": [
+        {
+          "id": "grp_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket accuracy +15%"
+        }
+      ]
+    },
+    {
+      "id": "grp_high_explosive",
+      "rarity": "UNCOMMON",
+      "description": "Explosion radius +30%",
+      "effects": [
+        {
+          "id": "grp_high_explosive.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Explosion radius +30%"
+        }
+      ]
+    },
+    {
+      "id": "grp_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "grp_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "grp_armor_piercing",
+      "rarity": "UNCOMMON",
+      "description": "Ignores 40% of target armor",
+      "effects": [
+        {
+          "id": "grp_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 40% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "grp_speed_rocket",
+      "rarity": "UNCOMMON",
+      "description": "Rocket flight speed +40%",
+      "effects": [
+        {
+          "id": "grp_speed_rocket.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PROJECTILE_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket flight speed +40%"
+        }
+      ]
+    },
+    {
+      "id": "grp_incendiary",
+      "rarity": "RARE",
+      "description": "Creates a fire zone after explosion for 5 seconds",
+      "effects": [
+        {
+          "id": "grp_incendiary.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "FIRE_ZONE_DURATION",
+          "condition": "ALWAYS",
+          "value": 100.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Creates a fire zone after explosion for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "grp_cluster",
+      "rarity": "RARE",
+      "description": "Splits into 3 smaller rockets on explosion",
+      "effects": [
+        {
+          "id": "grp_cluster.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "CLUSTER_COUNT",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Splits into 3 smaller rockets on explosion"
+        }
+      ]
+    },
+    {
+      "id": "grp_heavy_rocket",
+      "rarity": "RARE",
+      "description": "Damage +50%, but flight speed -20%",
+      "effects": [
+        {
+          "id": "grp_heavy_rocket.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%"
+        },
+        {
+          "id": "grp_heavy_rocket.2",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PROJECTILE_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "flight speed -20%"
+        }
+      ]
+    },
+    {
+      "id": "grp_tactical",
+      "rarity": "RARE",
+      "description": "+20% explosion radius and +20% damage",
+      "effects": [
+        {
+          "id": "grp_tactical.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% damage"
+        },
+        {
+          "id": "grp_tactical.2",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% explosion radius"
+        }
+      ]
+    },
+    {
+      "id": "grp_nuclear",
+      "rarity": "EPIC",
+      "description": "Explosion radius +80%, Damage +60%",
+      "effects": [
+        {
+          "id": "grp_nuclear.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.6,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%"
+        },
+        {
+          "id": "grp_nuclear.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Explosion radius +80%"
+        }
+      ]
+    },
+    {
+      "id": "grp_shockwave",
+      "rarity": "EPIC",
+      "description": "Knocks enemies back 10 blocks from epicenter",
+      "effects": [
+        {
+          "id": "grp_shockwave.1",
+          "trigger": "PASSIVE",
+          "action": "IMPACT_SHOCKWAVE",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks enemies back 10 blocks from epicenter"
+        }
+      ]
+    },
+    {
+      "id": "grp_heat_seeking",
+      "rarity": "EPIC",
+      "description": "Rocket slightly tracks nearest target",
+      "effects": [
+        {
+          "id": "grp_heat_seeking.1",
+          "trigger": "PASSIVE",
+          "action": "HEAT_SEEKING",
+          "condition": "ALWAYS",
+          "value": 0.08,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket slightly tracks nearest target"
+        }
+      ]
+    },
+    {
+      "id": "grp_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "grp_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "grp_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +80%, Radius +50%",
+      "effects": [
+        {
+          "id": "grp_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +80%, Radius +50%"
+        },
+        {
+          "id": "grp_monster.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +80%, Radius +50%"
+        }
+      ]
+    },
+    {
+      "id": "grp_endless_salvo",
+      "rarity": "LEGENDARY",
+      "description": "15% chance not to consume rocket",
+      "effects": [
+        {
+          "id": "grp_endless_salvo.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "15% chance not to consume rocket"
+        }
+      ]
+    },
+    {
+      "id": "grp_deadly_harvest",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1% damage and +0.5% radius (permanent). Max +100% damage and +50% radius",
+      "effects": [
+        {
+          "id": "grp_deadly_harvest.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +1% damage and +0.5% radius (permanent). Max +100% damage and +50% radius"
+        },
+        {
+          "id": "grp_deadly_harvest.2",
+          "trigger": "KILL",
+          "action": "STACK_EXPLOSION_RADIUS_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 50.0
+          },
+          "sourceFragment": "Each kill gives +1% damage and +0.5% radius (permanent). Max +100% damage and +50% radius"
+        }
+      ]
+    },
+    {
+      "id": "grp_salvo_death",
+      "rarity": "MYTHIC",
+      "description": "If you fire all 4 rockets at one target, the last deals +500% damage",
+      "effects": [
+        {
+          "id": "grp_salvo_death.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "FULL_MAG_TARGET_DAMAGE",
+          "condition": "FULL_MAGAZINE_SAME_TARGET",
+          "value": 6.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 4.0
+          },
+          "sourceFragment": "If you fire all 4 rockets at one target, the last deals +500% damage"
+        }
+      ]
+    },
+    {
+      "id": "grp_death_scythe",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +250%, radius +200%, infinite magazine. 15% chance to instantly kill all enemies within 50 blocks on kill",
+      "effects": [
+        {
+          "id": "grp_death_scythe.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "grp_death_scythe.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "grp_death_scythe.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "grp_death_scythe.4",
+          "trigger": "KILL",
+          "action": "KILL_AREA_EXECUTE",
+          "condition": "ALWAYS",
+          "value": 50.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "15% chance to instantly kill all enemies within 50 blocks on kill"
+        }
+      ]
+    }
+  ]
+}

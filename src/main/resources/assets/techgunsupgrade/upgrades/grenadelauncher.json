@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:grenadelauncher",
+  "upgrades": [
+    {
+      "id": "gl_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +15%",
+      "effects": [
+        {
+          "id": "gl_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +15%"
+        }
+      ]
+    },
+    {
+      "id": "gl_long_barrel",
+      "rarity": "COMMON",
+      "description": "Grenade flight range +30%",
+      "effects": [
+        {
+          "id": "gl_long_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Grenade flight range +30%"
+        }
+      ]
+    },
+    {
+      "id": "gl_light_frame",
+      "rarity": "COMMON",
+      "description": "Movement speed with weapon +10%",
+      "effects": [
+        {
+          "id": "gl_light_frame.1",
+          "trigger": "WHILE_HELD",
+          "action": "MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Movement speed with weapon +10%"
+        }
+      ]
+    },
+    {
+      "id": "gl_scope",
+      "rarity": "COMMON",
+      "description": "Grenade accuracy +15%",
+      "effects": [
+        {
+          "id": "gl_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Grenade accuracy +15%"
+        }
+      ]
+    },
+    {
+      "id": "gl_high_explosive",
+      "rarity": "UNCOMMON",
+      "description": "Explosion radius +30%",
+      "effects": [
+        {
+          "id": "gl_high_explosive.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Explosion radius +30%"
+        }
+      ]
+    },
+    {
+      "id": "gl_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "gl_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "gl_armor_piercing",
+      "rarity": "UNCOMMON",
+      "description": "Ignores 30% of target armor",
+      "effects": [
+        {
+          "id": "gl_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 30% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "gl_speed_grenade",
+      "rarity": "UNCOMMON",
+      "description": "Grenade flight speed +40%",
+      "effects": [
+        {
+          "id": "gl_speed_grenade.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PROJECTILE_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Grenade flight speed +40%"
+        }
+      ]
+    },
+    {
+      "id": "gl_incendiary",
+      "rarity": "RARE",
+      "description": "Creates a fire zone after explosion for 5 seconds",
+      "effects": [
+        {
+          "id": "gl_incendiary.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "FIRE_ZONE_DURATION",
+          "condition": "ALWAYS",
+          "value": 100.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Creates a fire zone after explosion for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "gl_cluster",
+      "rarity": "RARE",
+      "description": "Splits into 3 smaller grenades on explosion",
+      "effects": [
+        {
+          "id": "gl_cluster.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "CLUSTER_COUNT",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Splits into 3 smaller grenades on explosion"
+        }
+      ]
+    },
+    {
+      "id": "gl_heavy_grenade",
+      "rarity": "RARE",
+      "description": "Damage +50%, but flight speed -20%",
+      "effects": [
+        {
+          "id": "gl_heavy_grenade.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%"
+        },
+        {
+          "id": "gl_heavy_grenade.2",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PROJECTILE_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "flight speed -20%"
+        }
+      ]
+    },
+    {
+      "id": "gl_tactical",
+      "rarity": "RARE",
+      "description": "+20% explosion radius and +20% damage",
+      "effects": [
+        {
+          "id": "gl_tactical.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% damage"
+        },
+        {
+          "id": "gl_tactical.2",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% explosion radius"
+        }
+      ]
+    },
+    {
+      "id": "gl_shockwave",
+      "rarity": "EPIC",
+      "description": "Knocks enemies back 8 blocks from epicenter",
+      "effects": [
+        {
+          "id": "gl_shockwave.1",
+          "trigger": "PASSIVE",
+          "action": "IMPACT_SHOCKWAVE",
+          "condition": "ALWAYS",
+          "value": 8.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks enemies back 8 blocks from epicenter"
+        }
+      ]
+    },
+    {
+      "id": "gl_smoke",
+      "rarity": "EPIC",
+      "description": "Creates a smoke cloud hiding the player and slowing enemies",
+      "effects": [
+        {
+          "id": "gl_smoke.1",
+          "trigger": "PASSIVE",
+          "action": "IMPACT_SMOKE",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Creates a smoke cloud hiding the player and slowing enemies"
+        }
+      ]
+    },
+    {
+      "id": "gl_flashbang",
+      "rarity": "EPIC",
+      "description": "Blinds enemies within 5 blocks for 3 seconds",
+      "effects": [
+        {
+          "id": "gl_flashbang.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "IMPACT_BLINDNESS",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Blinds enemies within 5 blocks for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "gl_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "gl_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "gl_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +70%, Radius +40%",
+      "effects": [
+        {
+          "id": "gl_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.7,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +70%, Radius +40%"
+        },
+        {
+          "id": "gl_monster.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +70%, Radius +40%"
+        }
+      ]
+    },
+    {
+      "id": "gl_endless_salvo",
+      "rarity": "LEGENDARY",
+      "description": "15% chance not to consume grenade",
+      "effects": [
+        {
+          "id": "gl_endless_salvo.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "15% chance not to consume grenade"
+        }
+      ]
+    },
+    {
+      "id": "gl_demolitionist",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% explosive damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "gl_demolitionist.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% explosive damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "gl_deadly_ricochet",
+      "rarity": "MYTHIC",
+      "description": "Grenade can bounce off walls and explode near nearest enemy (10% chance)",
+      "effects": [
+        {
+          "id": "gl_deadly_ricochet.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "RICOCHET_NEAREST",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 10.0
+          },
+          "sourceFragment": "Grenade can bounce off walls and explode near nearest enemy (10% chance)"
+        }
+      ]
+    },
+    {
+      "id": "gl_artillery",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, radius +150%, infinite magazine. Grenades explode twice. 10% chance to call an artillery strike (3 extra explosions)",
+      "effects": [
+        {
+          "id": "gl_artillery.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +150%, infinite magazine"
+        },
+        {
+          "id": "gl_artillery.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +150%, infinite magazine"
+        },
+        {
+          "id": "gl_artillery.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +150%, infinite magazine"
+        },
+        {
+          "id": "gl_artillery.4",
+          "trigger": "PASSIVE",
+          "action": "EXTRA_IMPACT_EXPLOSIONS",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Grenades explode twice"
+        },
+        {
+          "id": "gl_artillery.5",
+          "trigger": "BLOCK_IMPACT",
+          "action": "ARTILLERY_STRIKE",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 8.0
+          },
+          "sourceFragment": "10% chance to call an artillery strike (3 extra explosions)"
+        }
+      ]
+    }
+  ]
+}

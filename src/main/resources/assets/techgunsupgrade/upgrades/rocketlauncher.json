@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:rocketlauncher",
+  "upgrades": [
+    {
+      "id": "baz_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +15%",
+      "effects": [
+        {
+          "id": "baz_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +15%"
+        }
+      ]
+    },
+    {
+      "id": "baz_long_launcher",
+      "rarity": "COMMON",
+      "description": "Rocket flight range +30%",
+      "effects": [
+        {
+          "id": "baz_long_launcher.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket flight range +30%"
+        }
+      ]
+    },
+    {
+      "id": "baz_light_frame",
+      "rarity": "COMMON",
+      "description": "Movement speed with weapon +10%",
+      "effects": [
+        {
+          "id": "baz_light_frame.1",
+          "trigger": "WHILE_HELD",
+          "action": "MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Movement speed with weapon +10%"
+        }
+      ]
+    },
+    {
+      "id": "baz_scope",
+      "rarity": "COMMON",
+      "description": "Rocket accuracy +15%",
+      "effects": [
+        {
+          "id": "baz_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket accuracy +15%"
+        }
+      ]
+    },
+    {
+      "id": "baz_high_explosive",
+      "rarity": "UNCOMMON",
+      "description": "Explosion radius +30%",
+      "effects": [
+        {
+          "id": "baz_high_explosive.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Explosion radius +30%"
+        }
+      ]
+    },
+    {
+      "id": "baz_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "baz_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "baz_armor_piercing",
+      "rarity": "UNCOMMON",
+      "description": "Ignores 40% of target armor",
+      "effects": [
+        {
+          "id": "baz_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 40% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "baz_speed_rocket",
+      "rarity": "UNCOMMON",
+      "description": "Rocket flight speed +40%",
+      "effects": [
+        {
+          "id": "baz_speed_rocket.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PROJECTILE_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket flight speed +40%"
+        }
+      ]
+    },
+    {
+      "id": "baz_incendiary",
+      "rarity": "RARE",
+      "description": "Creates a fire zone after explosion for 5 seconds",
+      "effects": [
+        {
+          "id": "baz_incendiary.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "FIRE_ZONE_DURATION",
+          "condition": "ALWAYS",
+          "value": 100.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Creates a fire zone after explosion for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "baz_cluster",
+      "rarity": "RARE",
+      "description": "Splits into 3 smaller rockets on explosion",
+      "effects": [
+        {
+          "id": "baz_cluster.1",
+          "trigger": "BLOCK_IMPACT",
+          "action": "CLUSTER_COUNT",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Splits into 3 smaller rockets on explosion"
+        }
+      ]
+    },
+    {
+      "id": "baz_heavy_rocket",
+      "rarity": "RARE",
+      "description": "Damage +50%, but flight speed -20%",
+      "effects": [
+        {
+          "id": "baz_heavy_rocket.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%"
+        },
+        {
+          "id": "baz_heavy_rocket.2",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PROJECTILE_SPEED_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "flight speed -20%"
+        }
+      ]
+    },
+    {
+      "id": "baz_tactical",
+      "rarity": "RARE",
+      "description": "+20% explosion radius and +20% damage",
+      "effects": [
+        {
+          "id": "baz_tactical.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% damage"
+        },
+        {
+          "id": "baz_tactical.2",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% explosion radius"
+        }
+      ]
+    },
+    {
+      "id": "baz_nuclear",
+      "rarity": "EPIC",
+      "description": "Explosion radius +80%, Damage +60%",
+      "effects": [
+        {
+          "id": "baz_nuclear.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.6,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%"
+        },
+        {
+          "id": "baz_nuclear.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Explosion radius +80%"
+        }
+      ]
+    },
+    {
+      "id": "baz_shockwave",
+      "rarity": "EPIC",
+      "description": "Knocks enemies back 10 blocks from epicenter",
+      "effects": [
+        {
+          "id": "baz_shockwave.1",
+          "trigger": "PASSIVE",
+          "action": "IMPACT_SHOCKWAVE",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks enemies back 10 blocks from epicenter"
+        }
+      ]
+    },
+    {
+      "id": "baz_heat_seeking",
+      "rarity": "EPIC",
+      "description": "Rocket slightly tracks nearest target",
+      "effects": [
+        {
+          "id": "baz_heat_seeking.1",
+          "trigger": "PASSIVE",
+          "action": "HEAT_SEEKING",
+          "condition": "ALWAYS",
+          "value": 0.08,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Rocket slightly tracks nearest target"
+        }
+      ]
+    },
+    {
+      "id": "baz_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "baz_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "baz_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +80%, Radius +50%",
+      "effects": [
+        {
+          "id": "baz_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +80%, Radius +50%"
+        },
+        {
+          "id": "baz_monster.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +80%, Radius +50%"
+        }
+      ]
+    },
+    {
+      "id": "baz_endless_salvo",
+      "rarity": "LEGENDARY",
+      "description": "15% chance not to consume rocket",
+      "effects": [
+        {
+          "id": "baz_endless_salvo.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "15% chance not to consume rocket"
+        }
+      ]
+    },
+    {
+      "id": "baz_apocalypse",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% explosive damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "baz_apocalypse.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% explosive damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "baz_deadly_salvo",
+      "rarity": "MYTHIC",
+      "description": "If you kill an enemy with the first shot, next shot deals +300% damage",
+      "effects": [
+        {
+          "id": "baz_deadly_salvo.1",
+          "trigger": "KILL",
+          "action": "FIRST_SHOT_KILL_NEXT_DAMAGE",
+          "condition": "FIRST_SHOT_KILL",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If you kill an enemy with the first shot, next shot deals +300% damage"
+        }
+      ]
+    },
+    {
+      "id": "baz_armageddon",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, radius +200%, infinite magazine. 10% chance to create a nuclear mushroom destroying everything in 30 blocks",
+      "effects": [
+        {
+          "id": "baz_armageddon.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "baz_armageddon.2",
+          "trigger": "PASSIVE",
+          "action": "EXPLOSION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "baz_armageddon.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, radius +200%, infinite magazine"
+        },
+        {
+          "id": "baz_armageddon.4",
+          "trigger": "BLOCK_IMPACT",
+          "action": "NUCLEAR_IMPACT",
+          "condition": "ALWAYS",
+          "value": 30.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "10% chance to create a nuclear mushroom destroying everything in 30 blocks"
+        }
+      ]
+    }
+  ]
+}

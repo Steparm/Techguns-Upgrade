@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:sawedoff",
+  "upgrades": [
+    {
+      "id": "db_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "db_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "db_short_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +15% at close range (up to 5 blocks), but -20% range",
+      "effects": [
+        {
+          "id": "db_short_barrel.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "TARGET_WITHIN_DISTANCE",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Damage +15% at close range (up to 5 blocks)"
+        },
+        {
+          "id": "db_short_barrel.2",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "-20% range"
+        }
+      ]
+    },
+    {
+      "id": "db_smooth_barrel",
+      "rarity": "COMMON",
+      "description": "Spread -10% (slightly more accurate)",
+      "effects": [
+        {
+          "id": "db_smooth_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.9090909090909091,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -10% (slightly more accurate)"
+        }
+      ]
+    },
+    {
+      "id": "db_long_barrel",
+      "rarity": "COMMON",
+      "description": "+30% range",
+      "effects": [
+        {
+          "id": "db_long_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+30% range"
+        }
+      ]
+    },
+    {
+      "id": "db_double_shot",
+      "rarity": "UNCOMMON",
+      "description": "Fires both barrels at once (uses 2 ammo, double damage)",
+      "effects": [
+        {
+          "id": "db_double_shot.1",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fires both barrels at once"
+        },
+        {
+          "id": "db_double_shot.2",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_CONSUMPTION_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "uses 2 ammo"
+        }
+      ]
+    },
+    {
+      "id": "db_strong_ammo",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "db_strong_ammo.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "db_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "db_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "db_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +30%",
+      "effects": [
+        {
+          "id": "db_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%"
+        }
+      ]
+    },
+    {
+      "id": "db_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "db_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "db_explosive",
+      "rarity": "RARE",
+      "description": "Each pellet has small explosion on impact",
+      "effects": [
+        {
+          "id": "db_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each pellet has small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "db_armor_piercing",
+      "rarity": "RARE",
+      "description": "Pellets ignore 40% of target armor",
+      "effects": [
+        {
+          "id": "db_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Pellets ignore 40% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "db_cartridge",
+      "rarity": "RARE",
+      "description": "+3 additional pellets per shot (total 10)",
+      "effects": [
+        {
+          "id": "db_cartridge.1",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_ADD",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+3 additional pellets per shot (total 10)"
+        }
+      ]
+    },
+    {
+      "id": "db_hell_shot",
+      "rarity": "EPIC",
+      "description": "Fires both barrels at once, doubling damage and igniting target for 5 seconds",
+      "effects": [
+        {
+          "id": "db_hell_shot.1",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fires both barrels at once"
+        },
+        {
+          "id": "db_hell_shot.2",
+          "trigger": "PASSIVE",
+          "action": "AMMO_CONSUMPTION_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fires both barrels at once, doubling damage and igniting target for 5 seconds"
+        },
+        {
+          "id": "db_hell_shot.3",
+          "trigger": "PASSIVE",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 100.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "igniting target for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "db_deadly_duet",
+      "rarity": "EPIC",
+      "description": "If both barrels hit the same target, second shot deals +100% damage",
+      "effects": [
+        {
+          "id": "db_deadly_duet.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONSECUTIVE_TARGET_DAMAGE_MULTIPLIER",
+          "condition": "CONSECUTIVE_SAME_TARGET",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If both barrels hit the same target, second shot deals +100% damage"
+        }
+      ]
+    },
+    {
+      "id": "db_knockback",
+      "rarity": "EPIC",
+      "description": "Knocks target back 5 blocks on hit",
+      "effects": [
+        {
+          "id": "db_knockback.1",
+          "trigger": "PASSIVE",
+          "action": "KNOCKBACK_BONUS",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks target back 5 blocks on hit"
+        }
+      ]
+    },
+    {
+      "id": "db_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "db_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "db_fire_storm",
+      "rarity": "LEGENDARY",
+      "description": "+100% Fire Rate and +30% damage, but -20% accuracy",
+      "effects": [
+        {
+          "id": "db_fire_storm.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+100% Fire Rate and +30% damage, but -20% accuracy"
+        },
+        {
+          "id": "db_fire_storm.2",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+100% Fire Rate and +30% damage, but -20% accuracy"
+        },
+        {
+          "id": "db_fire_storm.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+100% Fire Rate and +30% damage, but -20% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "db_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +70%, +5 pellets, but reload 2x slower",
+      "effects": [
+        {
+          "id": "db_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.7,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +70%"
+        },
+        {
+          "id": "db_monster.2",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_ADD",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+5 pellets"
+        },
+        {
+          "id": "db_monster.3",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "reload 2x slower"
+        }
+      ]
+    },
+    {
+      "id": "db_hell_duet",
+      "rarity": "MYTHIC",
+      "description": "Firing both barrels simultaneously creates a 5-block radius explosion",
+      "effects": [
+        {
+          "id": "db_hell_duet.1",
+          "trigger": "PASSIVE",
+          "action": "IMPACT_EXPLOSION_RADIUS",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Firing both barrels simultaneously creates a 5-block radius explosion"
+        }
+      ]
+    },
+    {
+      "id": "db_doom_shot",
+      "rarity": "MYTHIC",
+      "description": "Each pellet deals +50% damage, but jam chance +15%",
+      "effects": [
+        {
+          "id": "db_doom_shot.1",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each pellet deals +50% damage"
+        },
+        {
+          "id": "db_doom_shot.2",
+          "trigger": "PASSIVE",
+          "action": "JAM_CHANCE",
+          "condition": "ALWAYS",
+          "value": 0.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "jam chance +15%"
+        }
+      ]
+    },
+    {
+      "id": "db_hell_duet_ultra",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, fires 20 pellets instantly, all ignite",
+      "effects": [
+        {
+          "id": "db_hell_duet_ultra.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, fires 20 pellets instantly, all ignite"
+        },
+        {
+          "id": "db_hell_duet_ultra.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, fires 20 pellets instantly, all ignite"
+        },
+        {
+          "id": "db_hell_duet_ultra.3",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_OVERRIDE",
+          "condition": "ALWAYS",
+          "value": 20.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, fires 20 pellets instantly, all ignite"
+        },
+        {
+          "id": "db_hell_duet_ultra.4",
+          "trigger": "PASSIVE",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 100.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, fires 20 pellets instantly, all ignite"
+        }
+      ]
+    }
+  ]
+}

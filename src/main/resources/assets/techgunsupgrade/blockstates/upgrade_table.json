@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "techgunsupgrade:upgrade_table" },
+        "facing=north": { "model": "techgunsupgrade:upgrade_table", "y": 180 },
+        "facing=east":  { "model": "techgunsupgrade:upgrade_table", "y": 270 },
+        "facing=west":  { "model": "techgunsupgrade:upgrade_table", "y": 90 }
+    }
+}

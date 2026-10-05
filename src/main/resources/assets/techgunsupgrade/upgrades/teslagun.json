@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:teslagun",
+  "upgrades": [
+    {
+      "id": "tesla_coil",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "tesla_coil.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "tesla_big_capacitor",
+      "rarity": "COMMON",
+      "description": "+5 charges (total 30)",
+      "effects": [
+        {
+          "id": "tesla_big_capacitor.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+5 charges (total 30)"
+        }
+      ]
+    },
+    {
+      "id": "tesla_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "tesla_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "tesla_quick_charge",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "tesla_quick_charge.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "tesla_power",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "tesla_power.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "tesla_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "tesla_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "tesla_focus_lens",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "tesla_focus_lens.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "tesla_power_pulse",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "tesla_power_pulse.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "tesla_chain",
+      "rarity": "RARE",
+      "description": "Electricity jumps to +2 enemies (total 5)",
+      "effects": [
+        {
+          "id": "tesla_chain.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CHAIN_LIGHTNING_TARGETS",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Electricity jumps to +2 enemies (total 5)"
+        }
+      ]
+    },
+    {
+      "id": "tesla_explosive_arc",
+      "rarity": "RARE",
+      "description": "10% chance of small explosion on impact",
+      "effects": [
+        {
+          "id": "tesla_explosive_arc.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "10% chance of small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "tesla_paralyze",
+      "rarity": "RARE",
+      "description": "Stuns target for 1 second",
+      "effects": [
+        {
+          "id": "tesla_paralyze.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "STUN_DURATION",
+          "condition": "ALWAYS",
+          "value": 20.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Stuns target for 1 second"
+        }
+      ]
+    },
+    {
+      "id": "tesla_long_arc",
+      "rarity": "RARE",
+      "description": "Arc range +50%",
+      "effects": [
+        {
+          "id": "tesla_long_arc.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Arc range +50%"
+        }
+      ]
+    },
+    {
+      "id": "tesla_storm",
+      "rarity": "EPIC",
+      "description": "If two shots hit the same target consecutively, second deals +150% damage",
+      "effects": [
+        {
+          "id": "tesla_storm.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONSECUTIVE_TARGET_DAMAGE_MULTIPLIER",
+          "condition": "CONSECUTIVE_SAME_TARGET",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If two shots hit the same target consecutively, second deals +150% damage"
+        }
+      ]
+    },
+    {
+      "id": "tesla_electro_field",
+      "rarity": "EPIC",
+      "description": "+20% movement speed while firing",
+      "effects": [
+        {
+          "id": "tesla_electro_field.1",
+          "trigger": "WHILE_HELD",
+          "action": "FIRING_MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% movement speed while firing"
+        }
+      ]
+    },
+    {
+      "id": "tesla_precise_shot",
+      "rarity": "EPIC",
+      "description": "First shot after reload is always critical (x1.5 damage)",
+      "effects": [
+        {
+          "id": "tesla_precise_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "FIRST_SHOT_AFTER_RELOAD",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "First shot after reload is always critical (x1.5 damage)"
+        }
+      ]
+    },
+    {
+      "id": "tesla_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "tesla_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "tesla_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +50%, +3 jump targets",
+      "effects": [
+        {
+          "id": "tesla_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +50%"
+        },
+        {
+          "id": "tesla_monster.2",
+          "trigger": "PASSIVE",
+          "action": "CHAIN_LIGHTNING_TARGETS",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+3 jump targets"
+        }
+      ]
+    },
+    {
+      "id": "tesla_endless",
+      "rarity": "LEGENDARY",
+      "description": "20% chance not to consume charge",
+      "effects": [
+        {
+          "id": "tesla_endless.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "tesla_lord_lightning",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1% lightning damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "tesla_lord_lightning.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +1% lightning damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "tesla_deadly_chain",
+      "rarity": "MYTHIC",
+      "description": "If electricity kills an enemy, it automatically jumps to the next (chain reaction)",
+      "effects": [
+        {
+          "id": "tesla_deadly_chain.1",
+          "trigger": "KILL",
+          "action": "KILL_CHAIN_LIGHTNING",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If electricity kills an enemy, it automatically jumps to the next (chain reaction)"
+        }
+      ]
+    },
+    {
+      "id": "tesla_thunder",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, infinite magazine. Electricity jumps to all enemies within 20 blocks. Each killed enemy summons a lightning bolt",
+      "effects": [
+        {
+          "id": "tesla_thunder.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, infinite magazine"
+        },
+        {
+          "id": "tesla_thunder.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, infinite magazine"
+        },
+        {
+          "id": "tesla_thunder.3",
+          "trigger": "PASSIVE",
+          "action": "CHAIN_ALL_RADIUS",
+          "condition": "ALWAYS",
+          "value": 20.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Electricity jumps to all enemies within 20 blocks"
+        },
+        {
+          "id": "tesla_thunder.4",
+          "trigger": "KILL",
+          "action": "KILL_LIGHTNING",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each killed enemy summons a lightning bolt"
+        }
+      ]
+    }
+  ]
+}

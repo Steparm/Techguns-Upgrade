@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:pistol",
+  "upgrades": [
+    {
+      "id": "pist_heavy_trigger",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "pist_heavy_trigger.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "pist_long_barrel",
+      "rarity": "COMMON",
+      "description": "+25% range",
+      "effects": [
+        {
+          "id": "pist_long_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+25% range"
+        }
+      ]
+    },
+    {
+      "id": "pist_grip",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "pist_grip.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "pist_big_mag",
+      "rarity": "COMMON",
+      "description": "+3 ammo (total 21)",
+      "effects": [
+        {
+          "id": "pist_big_mag.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+3 ammo (total 21)"
+        }
+      ]
+    },
+    {
+      "id": "pist_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "pist_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "pist_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "pist_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "pist_scope",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "pist_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "pist_strong_spring",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "pist_strong_spring.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "pist_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "pist_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "pist_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "pist_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "pist_speed_trigger",
+      "rarity": "RARE",
+      "description": "Fire Rate +35%",
+      "effects": [
+        {
+          "id": "pist_speed_trigger.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7407407407407407,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +35%"
+        }
+      ]
+    },
+    {
+      "id": "pist_double_shot",
+      "rarity": "RARE",
+      "description": "15% chance to fire twice (uses 2 ammo)",
+      "effects": [
+        {
+          "id": "pist_double_shot.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "RANDOM_EXTRA_PROJECTILES",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 1.0
+          },
+          "sourceFragment": "15% chance to fire twice (uses 2 ammo)"
+        }
+      ]
+    },
+    {
+      "id": "pist_deadly_double",
+      "rarity": "EPIC",
+      "description": "If two shots hit the same target consecutively, second deals +150% damage",
+      "effects": [
+        {
+          "id": "pist_deadly_double.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONSECUTIVE_TARGET_DAMAGE_MULTIPLIER",
+          "condition": "CONSECUTIVE_SAME_TARGET",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If two shots hit the same target consecutively, second deals +150% damage"
+        }
+      ]
+    },
+    {
+      "id": "pist_fast_hand",
+      "rarity": "EPIC",
+      "description": "+20% movement speed while firing",
+      "effects": [
+        {
+          "id": "pist_fast_hand.1",
+          "trigger": "WHILE_HELD",
+          "action": "FIRING_MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% movement speed while firing"
+        }
+      ]
+    },
+    {
+      "id": "pist_sharpshooter",
+      "rarity": "EPIC",
+      "description": "First shot after reload is always critical (x1.5 damage)",
+      "effects": [
+        {
+          "id": "pist_sharpshooter.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "FIRST_SHOT_AFTER_RELOAD",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "First shot after reload is always critical (x1.5 damage)"
+        }
+      ]
+    },
+    {
+      "id": "pist_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "pist_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "pist_machine",
+      "rarity": "LEGENDARY",
+      "description": "Fire Rate +100%, but -20% accuracy",
+      "effects": [
+        {
+          "id": "pist_machine.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +100%"
+        },
+        {
+          "id": "pist_machine.2",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +100%, but -20% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "pist_sniper",
+      "rarity": "LEGENDARY",
+      "description": "+50% damage at range >15 blocks",
+      "effects": [
+        {
+          "id": "pist_sniper.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "TARGET_BEYOND_DISTANCE",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 15.0
+          },
+          "sourceFragment": "+50% damage at range >15 blocks"
+        }
+      ]
+    },
+    {
+      "id": "pist_duelist",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +1% accuracy (permanent). Max +50%",
+      "effects": [
+        {
+          "id": "pist_duelist.1",
+          "trigger": "KILL",
+          "action": "STACK_ACCURACY_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 50.0
+          },
+          "sourceFragment": "Each kill gives +1% accuracy (permanent). Max +50%"
+        }
+      ]
+    },
+    {
+      "id": "pist_wild_shot",
+      "rarity": "MYTHIC",
+      "description": "10% chance to deal +400% damage and stun target for 2 seconds",
+      "effects": [
+        {
+          "id": "pist_wild_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_DAMAGE_STUN",
+          "condition": "ALWAYS",
+          "value": 40.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "10% chance to deal +400% damage and stun target for 2 seconds"
+        }
+      ]
+    },
+    {
+      "id": "pist_legendary",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, Fire Rate +200%, infinite magazine. Every 3rd shot deals +500% damage",
+      "effects": [
+        {
+          "id": "pist_legendary.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "pist_legendary.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.3333333333333333,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "pist_legendary.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "pist_legendary.4",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 6.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 3.0
+          },
+          "sourceFragment": "Every 3rd shot deals +500% damage"
+        }
+      ]
+    }
+  ]
+}

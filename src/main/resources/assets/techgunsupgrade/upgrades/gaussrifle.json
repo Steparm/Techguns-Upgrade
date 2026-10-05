@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:gaussrifle",
+  "upgrades": [
+    {
+      "id": "grf_emitter",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "grf_emitter.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "grf_big_battery",
+      "rarity": "COMMON",
+      "description": "+1 charge (total 9)",
+      "effects": [
+        {
+          "id": "grf_big_battery.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+1 charge (total 9)"
+        }
+      ]
+    },
+    {
+      "id": "grf_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "grf_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "grf_quick_reload",
+      "rarity": "COMMON",
+      "description": "Reload time -15%",
+      "effects": [
+        {
+          "id": "grf_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.85,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload time -15%"
+        }
+      ]
+    },
+    {
+      "id": "grf_power",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "grf_power.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "grf_quick_reload_2",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "grf_quick_reload_2.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "grf_focus_lens",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "grf_focus_lens.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "grf_strong_capacitor",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +20%",
+      "effects": [
+        {
+          "id": "grf_strong_capacitor.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +20%"
+        }
+      ]
+    },
+    {
+      "id": "grf_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "grf_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "grf_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "grf_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "grf_armor_piercing",
+      "rarity": "RARE",
+      "description": "Ignores 50% of target armor",
+      "effects": [
+        {
+          "id": "grf_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignores 50% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "grf_heavy_bullet",
+      "rarity": "RARE",
+      "description": "Damage +30%, but Fire Rate -15%",
+      "effects": [
+        {
+          "id": "grf_heavy_bullet.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%"
+        },
+        {
+          "id": "grf_heavy_bullet.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1764705882352942,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate -15%"
+        }
+      ]
+    },
+    {
+      "id": "grf_deadly_shot",
+      "rarity": "EPIC",
+      "description": "Last charge in magazine deals +250% damage",
+      "effects": [
+        {
+          "id": "grf_deadly_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "LAST_ROUND",
+          "value": 3.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Last charge in magazine deals +250% damage"
+        }
+      ]
+    },
+    {
+      "id": "grf_sniper",
+      "rarity": "EPIC",
+      "description": "+40% damage at range >40 blocks",
+      "effects": [
+        {
+          "id": "grf_sniper.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "TARGET_BEYOND_DISTANCE",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 40.0
+          },
+          "sourceFragment": "+40% damage at range >40 blocks"
+        }
+      ]
+    },
+    {
+      "id": "grf_silence",
+      "rarity": "EPIC",
+      "description": "Shot makes no sound",
+      "effects": [
+        {
+          "id": "grf_silence.1",
+          "trigger": "PASSIVE",
+          "action": "SILENCE_SHOT",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Shot makes no sound"
+        }
+      ]
+    },
+    {
+      "id": "grf_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "grf_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "grf_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +60%, Accuracy +30%",
+      "effects": [
+        {
+          "id": "grf_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.6,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%, Accuracy +30%"
+        },
+        {
+          "id": "grf_monster.2",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7692307692307692,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%, Accuracy +30%"
+        }
+      ]
+    },
+    {
+      "id": "grf_endless",
+      "rarity": "LEGENDARY",
+      "description": "25% chance not to consume charge",
+      "effects": [
+        {
+          "id": "grf_endless.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.25,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "25% chance not to consume charge"
+        }
+      ]
+    },
+    {
+      "id": "grf_lord_pulse",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% damage (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "grf_lord_pulse.1",
+          "trigger": "KILL",
+          "action": "STACK_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% damage (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "grf_deadly_shot_m",
+      "rarity": "MYTHIC",
+      "description": "If you kill an enemy with the first shot, next shot deals +300% damage",
+      "effects": [
+        {
+          "id": "grf_deadly_shot_m.1",
+          "trigger": "KILL",
+          "action": "FIRST_SHOT_KILL_NEXT_DAMAGE",
+          "condition": "FIRST_SHOT_KILL",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "If you kill an enemy with the first shot, next shot deals +300% damage"
+        }
+      ]
+    },
+    {
+      "id": "grf_railgun",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +250%, infinite magazine. Instant charge. Projectile pierces all enemies and walls. 15% chance to summon an electromagnetic pulse — all enemies within 10 blocks take +200% damage and are stunned for 3 seconds",
+      "effects": [
+        {
+          "id": "grf_railgun.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, infinite magazine"
+        },
+        {
+          "id": "grf_railgun.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +250%, infinite magazine"
+        },
+        {
+          "id": "grf_railgun.3",
+          "trigger": "PASSIVE",
+          "action": "INSTANT_CHARGE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Instant charge"
+        },
+        {
+          "id": "grf_railgun.4",
+          "trigger": "PASSIVE",
+          "action": "RAILGUN_PIERCE",
+          "condition": "ALWAYS",
+          "value": 160.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Projectile pierces all enemies and walls"
+        },
+        {
+          "id": "grf_railgun.5",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "RANDOM_EMP",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 0.15,
+          "parameters": {
+            "conditionValue": 3.0
+          },
+          "sourceFragment": "15% chance to summon an electromagnetic pulse — all enemies within 10 blocks take +200% damage and are stunned for 3 seconds"
+        }
+      ]
+    }
+  ]
+}

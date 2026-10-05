@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:combatshotgun",
+  "upgrades": [
+    {
+      "id": "cs_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "cs_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "cs_short_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +15% at close range (up to 5 blocks), but -20% range",
+      "effects": [
+        {
+          "id": "cs_short_barrel.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "TARGET_WITHIN_DISTANCE",
+          "value": 1.15,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Damage +15% at close range (up to 5 blocks)"
+        },
+        {
+          "id": "cs_short_barrel.2",
+          "trigger": "PASSIVE",
+          "action": "RANGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "-20% range"
+        }
+      ]
+    },
+    {
+      "id": "cs_rifled_barrel",
+      "rarity": "COMMON",
+      "description": "Spread -15% (slightly more accurate)",
+      "effects": [
+        {
+          "id": "cs_rifled_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15% (slightly more accurate)"
+        }
+      ]
+    },
+    {
+      "id": "cs_long_mag",
+      "rarity": "COMMON",
+      "description": "+2 ammo (total 10)",
+      "effects": [
+        {
+          "id": "cs_long_mag.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+2 ammo (total 10)"
+        }
+      ]
+    },
+    {
+      "id": "cs_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "cs_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "cs_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "cs_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "cs_shot",
+      "rarity": "UNCOMMON",
+      "description": "+2 additional pellets (total 10)",
+      "effects": [
+        {
+          "id": "cs_shot.1",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_ADD",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+2 additional pellets (total 10)"
+        }
+      ]
+    },
+    {
+      "id": "cs_stock",
+      "rarity": "UNCOMMON",
+      "description": "-20% spread when crouching",
+      "effects": [
+        {
+          "id": "cs_stock.1",
+          "trigger": "PASSIVE",
+          "action": "CONDITIONAL_SPREAD_MULTIPLIER",
+          "condition": "PRONE",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "-20% spread when crouching"
+        }
+      ]
+    },
+    {
+      "id": "cs_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "cs_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "cs_explosive",
+      "rarity": "RARE",
+      "description": "Each pellet has small explosion on impact",
+      "effects": [
+        {
+          "id": "cs_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each pellet has small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "cs_armor_piercing",
+      "rarity": "RARE",
+      "description": "Pellets ignore 40% of target armor",
+      "effects": [
+        {
+          "id": "cs_armor_piercing.1",
+          "trigger": "PASSIVE",
+          "action": "ARMOR_PENETRATION_ADD",
+          "condition": "ALWAYS",
+          "value": 0.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Pellets ignore 40% of target armor"
+        }
+      ]
+    },
+    {
+      "id": "cs_cartridge",
+      "rarity": "RARE",
+      "description": "+4 additional pellets (total 12)",
+      "effects": [
+        {
+          "id": "cs_cartridge.1",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_ADD",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+4 additional pellets (total 12)"
+        }
+      ]
+    },
+    {
+      "id": "cs_combat_shot",
+      "rarity": "EPIC",
+      "description": "If fired point-blank (up to 3 blocks), +100% damage",
+      "effects": [
+        {
+          "id": "cs_combat_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "TARGET_WITHIN_DISTANCE",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 3.0
+          },
+          "sourceFragment": "If fired point-blank (up to 3 blocks), +100% damage"
+        }
+      ]
+    },
+    {
+      "id": "cs_shot_storm",
+      "rarity": "EPIC",
+      "description": "Hitting multiple enemies at once gives +20% damage to each",
+      "effects": [
+        {
+          "id": "cs_shot_storm.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "MULTI_TARGET_DAMAGE_MULTIPLIER",
+          "condition": "MULTIPLE_TARGETS_SAME_SHOT",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Hitting multiple enemies at once gives +20% damage to each"
+        }
+      ]
+    },
+    {
+      "id": "cs_knockback",
+      "rarity": "EPIC",
+      "description": "Knocks target back 5 blocks on hit",
+      "effects": [
+        {
+          "id": "cs_knockback.1",
+          "trigger": "PASSIVE",
+          "action": "KNOCKBACK_BONUS",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Knocks target back 5 blocks on hit"
+        }
+      ]
+    },
+    {
+      "id": "cs_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "cs_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "cs_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +60%, +5 pellets, but reload 2x slower",
+      "effects": [
+        {
+          "id": "cs_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.6,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%"
+        },
+        {
+          "id": "cs_monster.2",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_ADD",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+5 pellets"
+        },
+        {
+          "id": "cs_monster.3",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "reload 2x slower"
+        }
+      ]
+    },
+    {
+      "id": "cs_fire_storm",
+      "rarity": "LEGENDARY",
+      "description": "+50% Fire Rate and +30% damage, but -20% accuracy",
+      "effects": [
+        {
+          "id": "cs_fire_storm.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+50% Fire Rate and +30% damage, but -20% accuracy"
+        },
+        {
+          "id": "cs_fire_storm.2",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+50% Fire Rate and +30% damage, but -20% accuracy"
+        },
+        {
+          "id": "cs_fire_storm.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+50% Fire Rate and +30% damage, but -20% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "cs_street_fighter",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% damage at close range (up to 5 blocks). Max +100%",
+      "effects": [
+        {
+          "id": "cs_street_fighter.1",
+          "trigger": "KILL",
+          "action": "STACK_CLOSE_DAMAGE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% damage at close range (up to 5 blocks). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "cs_deadly_shot",
+      "rarity": "MYTHIC",
+      "description": "If all 8 shots hit the same target without reloading, last bullet deals +500% damage",
+      "effects": [
+        {
+          "id": "cs_deadly_shot.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "FULL_MAG_TARGET_DAMAGE",
+          "condition": "FULL_MAGAZINE_SAME_TARGET",
+          "value": 6.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 8.0
+          },
+          "sourceFragment": "If all 8 shots hit the same target without reloading, last bullet deals +500% damage"
+        }
+      ]
+    },
+    {
+      "id": "cs_war_machine",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, +10 pellets, infinite magazine. Every shot creates a shockwave knocking back all enemies within 5 blocks",
+      "effects": [
+        {
+          "id": "cs_war_machine.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, +10 pellets, infinite magazine"
+        },
+        {
+          "id": "cs_war_machine.2",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, +10 pellets, infinite magazine"
+        },
+        {
+          "id": "cs_war_machine.3",
+          "trigger": "PASSIVE",
+          "action": "PROJECTILE_COUNT_ADD",
+          "condition": "ALWAYS",
+          "value": 10.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+10 pellets"
+        },
+        {
+          "id": "cs_war_machine.4",
+          "trigger": "PASSIVE",
+          "action": "IMPACT_SHOCKWAVE",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Every shot creates a shockwave knocking back all enemies within 5 blocks"
+        }
+      ]
+    }
+  ]
+}

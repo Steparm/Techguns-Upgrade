@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:ak47",
+  "upgrades": [
+    {
+      "id": "akm_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "akm_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "akm_mag",
+      "rarity": "COMMON",
+      "description": "+5 ammo (total 35)",
+      "effects": [
+        {
+          "id": "akm_mag.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+5 ammo (total 35)"
+        }
+      ]
+    },
+    {
+      "id": "akm_stock",
+      "rarity": "COMMON",
+      "description": "-15% spread when firing bursts",
+      "effects": [
+        {
+          "id": "akm_stock.1",
+          "trigger": "PASSIVE",
+          "action": "CONDITIONAL_SPREAD_MULTIPLIER",
+          "condition": "BURST_FIRE",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "-15% spread when firing bursts"
+        }
+      ]
+    },
+    {
+      "id": "akm_spring",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "akm_spring.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "akm_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "akm_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "akm_scope",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "akm_scope.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "akm_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "akm_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "akm_silencer",
+      "rarity": "UNCOMMON",
+      "description": "Shot 30% quieter",
+      "effects": [
+        {
+          "id": "akm_silencer.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "DETECTION_RADIUS_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Shot 30% quieter"
+        }
+      ]
+    },
+    {
+      "id": "akm_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "akm_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "akm_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "akm_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "akm_speed_fire",
+      "rarity": "RARE",
+      "description": "Fire Rate +30%",
+      "effects": [
+        {
+          "id": "akm_speed_fire.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7692307692307692,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +30%"
+        }
+      ]
+    },
+    {
+      "id": "akm_army_stock",
+      "rarity": "RARE",
+      "description": "+20% accuracy when firing bursts",
+      "effects": [
+        {
+          "id": "akm_army_stock.1",
+          "trigger": "PASSIVE",
+          "action": "CONDITIONAL_SPREAD_MULTIPLIER",
+          "condition": "BURST_FIRE",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% accuracy when firing bursts"
+        }
+      ]
+    },
+    {
+      "id": "akm_fire_storm",
+      "rarity": "EPIC",
+      "description": "Every 5th shot deals double damage",
+      "effects": [
+        {
+          "id": "akm_fire_storm.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Every 5th shot deals double damage"
+        }
+      ]
+    },
+    {
+      "id": "akm_reliable",
+      "rarity": "EPIC",
+      "description": "Jam chance reduced by 50%",
+      "effects": [
+        {
+          "id": "akm_reliable.1",
+          "trigger": "PASSIVE",
+          "action": "JAM_CHANCE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Jam chance reduced by 50%"
+        }
+      ]
+    },
+    {
+      "id": "akm_long_burst",
+      "rarity": "EPIC",
+      "description": "Burst of >15 shots deals +20% damage",
+      "effects": [
+        {
+          "id": "akm_long_burst.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "BURST_THRESHOLD_DAMAGE_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 15.0
+          },
+          "sourceFragment": "Burst of >15 shots deals +20% damage"
+        }
+      ]
+    },
+    {
+      "id": "akm_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "akm_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "akm_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +40%, Fire Rate +40%, but -20% accuracy",
+      "effects": [
+        {
+          "id": "akm_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +40%, but -20% accuracy"
+        },
+        {
+          "id": "akm_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7142857142857143,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +40%, but -20% accuracy"
+        },
+        {
+          "id": "akm_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +40%, but -20% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "akm_combat",
+      "rarity": "LEGENDARY",
+      "description": "Damage +30%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "akm_combat.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        },
+        {
+          "id": "akm_combat.2",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "akm_legend",
+      "rarity": "MYTHIC",
+      "description": "20% chance not to consume ammo",
+      "effects": [
+        {
+          "id": "akm_legend.1",
+          "trigger": "AMMO_CONSUMPTION",
+          "action": "AMMO_SAVE_CHANCE",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 0.2,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "20% chance not to consume ammo"
+        }
+      ]
+    },
+    {
+      "id": "akm_monster_ak",
+      "rarity": "MYTHIC",
+      "description": "Damage +60%, Fire Rate +50%",
+      "effects": [
+        {
+          "id": "akm_monster_ak.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.6,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%, Fire Rate +50%"
+        },
+        {
+          "id": "akm_monster_ak.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +60%, Fire Rate +50%"
+        }
+      ]
+    },
+    {
+      "id": "akm_immortal",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +200%, Fire Rate +200%, Accuracy +100%, infinite magazine",
+      "effects": [
+        {
+          "id": "akm_immortal.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 3.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, Accuracy +100%, infinite magazine"
+        },
+        {
+          "id": "akm_immortal.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.3333333333333333,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, Accuracy +100%, infinite magazine"
+        },
+        {
+          "id": "akm_immortal.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, Accuracy +100%, infinite magazine"
+        },
+        {
+          "id": "akm_immortal.4",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +200%, Fire Rate +200%, Accuracy +100%, infinite magazine"
+        }
+      ]
+    }
+  ]
+}

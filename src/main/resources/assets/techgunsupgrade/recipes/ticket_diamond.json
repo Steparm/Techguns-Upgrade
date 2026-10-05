@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "PGP",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "G": {
+      "item": "techgunsupgrade:ticket_gold"
+    }
+  },
+  "result": {
+    "item": "techgunsupgrade:ticket_diamond",
+    "count": 1
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "weapon": "techguns:vector",
+  "upgrades": [
+    {
+      "id": "vec_heavy_barrel",
+      "rarity": "COMMON",
+      "description": "Damage +10%",
+      "effects": [
+        {
+          "id": "vec_heavy_barrel.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.1,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +10%"
+        }
+      ]
+    },
+    {
+      "id": "vec_long_mag",
+      "rarity": "COMMON",
+      "description": "+5 ammo (total 30)",
+      "effects": [
+        {
+          "id": "vec_long_mag.1",
+          "trigger": "PASSIVE",
+          "action": "MAGAZINE_ADD",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+5 ammo (total 30)"
+        }
+      ]
+    },
+    {
+      "id": "vec_stabilizer",
+      "rarity": "COMMON",
+      "description": "Spread -15%",
+      "effects": [
+        {
+          "id": "vec_stabilizer.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -15%"
+        }
+      ]
+    },
+    {
+      "id": "vec_strong_spring",
+      "rarity": "COMMON",
+      "description": "Fire Rate +15%",
+      "effects": [
+        {
+          "id": "vec_strong_spring.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8695652173913044,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +15%"
+        }
+      ]
+    },
+    {
+      "id": "vec_quick_reload",
+      "rarity": "UNCOMMON",
+      "description": "Reload 1.5x faster",
+      "effects": [
+        {
+          "id": "vec_quick_reload.1",
+          "trigger": "PASSIVE",
+          "action": "RELOAD_TIME_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Reload 1.5x faster"
+        }
+      ]
+    },
+    {
+      "id": "vec_holo",
+      "rarity": "UNCOMMON",
+      "description": "Spread -20%",
+      "effects": [
+        {
+          "id": "vec_holo.1",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Spread -20%"
+        }
+      ]
+    },
+    {
+      "id": "vec_magnum",
+      "rarity": "UNCOMMON",
+      "description": "Damage +25%",
+      "effects": [
+        {
+          "id": "vec_magnum.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.25,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "vec_power_bolt",
+      "rarity": "UNCOMMON",
+      "description": "Fire Rate +25%",
+      "effects": [
+        {
+          "id": "vec_power_bolt.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +25%"
+        }
+      ]
+    },
+    {
+      "id": "vec_incendiary",
+      "rarity": "RARE",
+      "description": "Ignites target for 3 seconds",
+      "effects": [
+        {
+          "id": "vec_incendiary.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "INCENDIARY_DURATION",
+          "condition": "ALWAYS",
+          "value": 60.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Ignites target for 3 seconds"
+        }
+      ]
+    },
+    {
+      "id": "vec_explosive",
+      "rarity": "RARE",
+      "description": "Small explosion on impact",
+      "effects": [
+        {
+          "id": "vec_explosive.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "EXPLOSION_POWER",
+          "condition": "ALWAYS",
+          "value": 1.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Small explosion on impact"
+        }
+      ]
+    },
+    {
+      "id": "vec_speed_fire",
+      "rarity": "RARE",
+      "description": "Fire Rate +35%",
+      "effects": [
+        {
+          "id": "vec_speed_fire.1",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.7407407407407407,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Fire Rate +35%"
+        }
+      ]
+    },
+    {
+      "id": "vec_supersonic",
+      "rarity": "RARE",
+      "description": "+20% damage at range >15 blocks",
+      "effects": [
+        {
+          "id": "vec_supersonic.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "CONDITIONAL_DAMAGE_MULTIPLIER",
+          "condition": "TARGET_BEYOND_DISTANCE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 15.0
+          },
+          "sourceFragment": "+20% damage at range >15 blocks"
+        }
+      ]
+    },
+    {
+      "id": "vec_fire_storm",
+      "rarity": "EPIC",
+      "description": "Every 5th shot deals double damage",
+      "effects": [
+        {
+          "id": "vec_fire_storm.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 5.0
+          },
+          "sourceFragment": "Every 5th shot deals double damage"
+        }
+      ]
+    },
+    {
+      "id": "vec_tactical",
+      "rarity": "EPIC",
+      "description": "+20% movement speed while firing",
+      "effects": [
+        {
+          "id": "vec_tactical.1",
+          "trigger": "WHILE_HELD",
+          "action": "FIRING_MOVEMENT_SPEED_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "+20% movement speed while firing"
+        }
+      ]
+    },
+    {
+      "id": "vec_long_burst",
+      "rarity": "EPIC",
+      "description": "Burst of >10 shots deals +20% damage",
+      "effects": [
+        {
+          "id": "vec_long_burst.1",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "BURST_THRESHOLD_DAMAGE_MULTIPLIER",
+          "condition": "CONTINUOUS_FIRE",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 10.0
+          },
+          "sourceFragment": "Burst of >10 shots deals +20% damage"
+        }
+      ]
+    },
+    {
+      "id": "vec_blood_harvest",
+      "rarity": "LEGENDARY",
+      "description": "Each kill restores 2 hearts",
+      "effects": [
+        {
+          "id": "vec_blood_harvest.1",
+          "trigger": "KILL",
+          "action": "HEAL_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Each kill restores 2 hearts"
+        }
+      ]
+    },
+    {
+      "id": "vec_monster",
+      "rarity": "LEGENDARY",
+      "description": "Damage +40%, Fire Rate +50%, but -20% accuracy",
+      "effects": [
+        {
+          "id": "vec_monster.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.4,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -20% accuracy"
+        },
+        {
+          "id": "vec_monster.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.6666666666666666,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -20% accuracy"
+        },
+        {
+          "id": "vec_monster.3",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.2,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +40%, Fire Rate +50%, but -20% accuracy"
+        }
+      ]
+    },
+    {
+      "id": "vec_combat",
+      "rarity": "LEGENDARY",
+      "description": "Damage +30%, Accuracy +20%",
+      "effects": [
+        {
+          "id": "vec_combat.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 1.3,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        },
+        {
+          "id": "vec_combat.2",
+          "trigger": "PASSIVE",
+          "action": "SPREAD_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.8333333333333334,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +30%, Accuracy +20%"
+        }
+      ]
+    },
+    {
+      "id": "vec_speed",
+      "rarity": "MYTHIC",
+      "description": "Each kill gives +2% Fire Rate (permanent). Max +100%",
+      "effects": [
+        {
+          "id": "vec_speed.1",
+          "trigger": "KILL",
+          "action": "STACK_FIRE_RATE_ON_KILL",
+          "condition": "ALWAYS",
+          "value": 2.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 100.0
+          },
+          "sourceFragment": "Each kill gives +2% Fire Rate (permanent). Max +100%"
+        }
+      ]
+    },
+    {
+      "id": "vec_deadly_queue",
+      "rarity": "MYTHIC",
+      "description": "If you hit a target 10 times in a row without missing, the 11th shot deals +300% damage",
+      "effects": [
+        {
+          "id": "vec_deadly_queue.1",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "HIT_STREAK_DAMAGE",
+          "condition": "HIT_STREAK",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 10.0
+          },
+          "sourceFragment": "If you hit a target 10 times in a row without missing, the 11th shot deals +300% damage"
+        }
+      ]
+    },
+    {
+      "id": "vec_death_storm",
+      "rarity": "ULTRA_MYTHIC",
+      "description": "Damage +150%, Fire Rate +200%, infinite magazine. Every 3rd shot deals +300% damage. 10% chance to summon a hail of bullets — 5 extra bullets at nearest enemies",
+      "effects": [
+        {
+          "id": "vec_death_storm.1",
+          "trigger": "PASSIVE",
+          "action": "DAMAGE_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 2.5,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "vec_death_storm.2",
+          "trigger": "PASSIVE",
+          "action": "FIRE_DELAY_MULTIPLIER",
+          "condition": "ALWAYS",
+          "value": 0.3333333333333333,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "vec_death_storm.3",
+          "trigger": "PASSIVE",
+          "action": "UNLIMITED_AMMO",
+          "condition": "ALWAYS",
+          "value": 1.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        },
+        {
+          "id": "vec_death_storm.4",
+          "trigger": "DAMAGE_CALCULATION",
+          "action": "PERIODIC_SHOT_DAMAGE_MULTIPLIER",
+          "condition": "EVERY_NTH_SHOT",
+          "value": 4.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 3.0
+          },
+          "sourceFragment": "Every 3rd shot deals +300% damage"
+        },
+        {
+          "id": "vec_death_storm.5",
+          "trigger": "PROJECTILE_SPAWN",
+          "action": "TARGETED_PROJECTILE_BURST",
+          "condition": "ALWAYS",
+          "value": 5.0,
+          "probability": 0.1,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "10% chance to summon a hail of bullets — 5 extra bullets at nearest enemies"
+        },
+        {
+          "id": "vec_death_storm.6",
+          "trigger": "PASSIVE",
+          "action": "TARGETED_BURST_RANGE",
+          "condition": "ALWAYS",
+          "value": 24.0,
+          "probability": 1.0,
+          "parameters": {
+            "conditionValue": 0.0
+          },
+          "sourceFragment": "Damage +150%, Fire Rate +200%, infinite magazine"
+        }
+      ]
+    }
+  ]
+}
