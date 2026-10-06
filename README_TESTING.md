@@ -1,4 +1,4 @@
-# Testing Techguns Upgrade Station 1.0.0
+# Testing Techguns Upgrade 1.0.0.0
 
 The `/tgu` command is designed for developing and verifying all 839 upgrades. By default, it's only available to server operators with permission level 2 or higher. In singleplayer, you need to open the world to LAN with cheats enabled, or enable cheats in the world beforehand.
 
