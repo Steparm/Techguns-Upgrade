@@ -2,7 +2,7 @@
 
 ## Nuclear warning sound
 
-`src/main/resources/assets/techgunsupgrade/sounds/nuclear_warning.ogg` is adapted from the `nuke_alarm.ogg` asset in Oedldoedl Explosives by TheP2WKing. The sound registration pattern in `NuclearSounds.java` is based on that project's public implementation. The staged separation of terrain work, entity damage and presentation in `LightweightExplosion.java` is also informed by its open explosion implementation; the bounded queue and entity-only simulation are original to Techguns Upgrade Station.
+`src/main/resources/assets/techgunsupgrade/sounds/nuclear_warning.ogg` is adapted from the `nuke_alarm.ogg` asset in Oedldoedl Explosives by TheP2WKing. The sound registration pattern in `NuclearSounds.java` is based on that project's public implementation. The staged separation of terrain work, entity damage and presentation in `LightweightExplosion.java` is also informed by its open explosion implementation; the bounded queue and entity-only simulation are original to Techguns Upgrade.
 
 Source: https://github.com/TheP2WKing/oedldoedl-explosives
 
